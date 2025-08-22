@@ -1,0 +1,1116 @@
+[2025-08-17 14:29:34] Page loaded
+[2025-08-17 14:29:34] Rendering form
+[2025-08-17 14:29:34] CSRF Token: 5dc40a2e04a094f9d7f1cd5347ce735cc49464d914b2e2af6b43ef04531531fd
+[2025-08-17 14:29:52] Page loaded
+[2025-08-17 14:29:52] Form submitted via POST
+[2025-08-17 14:29:52] Processing form data
+[2025-08-17 14:29:52] RAW POST data: Array
+(
+    [csrf_token] => 5dc40a2e04a094f9d7f1cd5347ce735cc49464d914b2e2af6b43ef04531531fd
+    [username] => admin
+    [email] => admin@admin.com
+    [password] => 7788
+    [confirm_password] => 7788
+    [role] => admin
+)
+
+[2025-08-17 14:29:52] Processed form data:
+[2025-08-17 14:29:52] Username: admin
+[2025-08-17 14:29:52] Email: admin@admin.com
+[2025-08-17 14:29:52] Role Name: admin
+[2025-08-17 14:29:52] Password length: 4
+[2025-08-17 14:29:52] Confirm password length: 4
+[2025-08-17 14:29:52] Rendering form
+[2025-08-17 14:29:52] CSRF Token: 5dc40a2e04a094f9d7f1cd5347ce735cc49464d914b2e2af6b43ef04531531fd
+[2025-08-17 14:31:17] Page loaded
+[2025-08-17 14:31:17] Form submitted via POST
+[2025-08-17 14:31:17] Processing form data
+[2025-08-17 14:31:17] RAW POST data: Array
+(
+    [csrf_token] => 5dc40a2e04a094f9d7f1cd5347ce735cc49464d914b2e2af6b43ef04531531fd
+    [username] => admin
+    [email] => admin@admin.com
+    [password] => 7788
+    [confirm_password] => 7788
+    [role] => admin
+)
+
+[2025-08-17 14:31:17] Processed form data:
+[2025-08-17 14:31:17] Username: admin
+[2025-08-17 14:31:17] Email: admin@admin.com
+[2025-08-17 14:31:17] Role Name: admin
+[2025-08-17 14:31:17] Password length: 4
+[2025-08-17 14:31:17] Confirm password length: 4
+[2025-08-17 14:31:17] Rendering form
+[2025-08-17 14:31:17] CSRF Token: 5dc40a2e04a094f9d7f1cd5347ce735cc49464d914b2e2af6b43ef04531531fd
+[2025-08-17 14:31:33] Page loaded
+[2025-08-17 14:31:33] Form submitted via POST
+[2025-08-17 14:31:33] Processing form data
+[2025-08-17 14:31:33] RAW POST data: Array
+(
+    [csrf_token] => 5dc40a2e04a094f9d7f1cd5347ce735cc49464d914b2e2af6b43ef04531531fd
+    [username] => admin
+    [email] => admin@admin.com
+    [password] => 7788
+    [confirm_password] => 7788
+    [role] => admin
+)
+
+[2025-08-17 14:31:33] Processed form data:
+[2025-08-17 14:31:33] Username: admin
+[2025-08-17 14:31:33] Email: admin@admin.com
+[2025-08-17 14:31:33] Role Name: admin
+[2025-08-17 14:31:33] Password length: 4
+[2025-08-17 14:31:33] Confirm password length: 4
+[2025-08-17 14:31:33] Rendering form
+[2025-08-17 14:31:33] CSRF Token: 5dc40a2e04a094f9d7f1cd5347ce735cc49464d914b2e2af6b43ef04531531fd
+[2025-08-17 14:31:46] Page loaded
+[2025-08-17 14:31:46] Form submitted via POST
+[2025-08-17 14:31:46] Processing form data
+[2025-08-17 14:31:46] RAW POST data: Array
+(
+    [csrf_token] => 5dc40a2e04a094f9d7f1cd5347ce735cc49464d914b2e2af6b43ef04531531fd
+    [username] => admin
+    [email] => admin@admin.com
+    [password] => 7788
+    [confirm_password] => 7788
+    [role] => admin
+)
+
+[2025-08-17 14:31:46] Processed form data:
+[2025-08-17 14:31:46] Username: admin
+[2025-08-17 14:31:46] Email: admin@admin.com
+[2025-08-17 14:31:46] Role Name: admin
+[2025-08-17 14:31:46] Password length: 4
+[2025-08-17 14:31:46] Confirm password length: 4
+[2025-08-17 14:31:46] Rendering form
+[2025-08-17 14:31:46] CSRF Token: 5dc40a2e04a094f9d7f1cd5347ce735cc49464d914b2e2af6b43ef04531531fd
+[2025-08-17 14:37:24] Page loaded
+[2025-08-17 14:37:24] Form submitted via POST
+[2025-08-17 14:37:24] Processing form data
+[2025-08-17 14:37:24] RAW POST data: Array
+(
+    [csrf_token] => 5dc40a2e04a094f9d7f1cd5347ce735cc49464d914b2e2af6b43ef04531531fd
+    [username] => admin
+    [email] => admin@admin.com
+    [password] => 7788
+    [confirm_password] => 7788
+    [role] => admin
+)
+
+[2025-08-17 14:37:24] Processed form data:
+[2025-08-17 14:37:24] Username: admin
+[2025-08-17 14:37:24] Email: admin@admin.com
+[2025-08-17 14:37:24] Role Name: admin
+[2025-08-17 14:37:24] Password length: 4
+[2025-08-17 14:37:24] Confirm password length: 4
+[2025-08-17 14:37:24] Rendering form
+[2025-08-17 14:37:24] CSRF Token: 5dc40a2e04a094f9d7f1cd5347ce735cc49464d914b2e2af6b43ef04531531fd
+[2025-08-17 14:40:22] Page loaded
+[2025-08-17 14:40:22] Form submitted via POST
+[2025-08-17 14:40:22] Processing form data
+[2025-08-17 14:40:22] RAW POST data: Array
+(
+    [csrf_token] => 5dc40a2e04a094f9d7f1cd5347ce735cc49464d914b2e2af6b43ef04531531fd
+    [username] => admin
+    [email] => admin@admin.com
+    [password] => 7788
+    [confirm_password] => 7788
+    [role] => admin
+)
+
+[2025-08-17 14:40:22] Processed form data:
+[2025-08-17 14:40:22] Username: admin
+[2025-08-17 14:40:22] Email: admin@admin.com
+[2025-08-17 14:40:22] Role Name: admin
+[2025-08-17 14:40:22] Password length: 4
+[2025-08-17 14:40:22] Confirm password length: 4
+[2025-08-17 14:40:22] Rendering form
+[2025-08-17 14:40:22] CSRF Token: 5dc40a2e04a094f9d7f1cd5347ce735cc49464d914b2e2af6b43ef04531531fd
+[2025-08-17 14:40:52] Page loaded
+[2025-08-17 14:40:52] Form submitted via POST
+[2025-08-17 14:40:52] Processing form data
+[2025-08-17 14:40:52] RAW POST data: Array
+(
+    [csrf_token] => 5dc40a2e04a094f9d7f1cd5347ce735cc49464d914b2e2af6b43ef04531531fd
+    [username] => admin
+    [email] => admin@admin.com
+    [password] => 7788
+    [confirm_password] => 7788
+    [role] => admin
+)
+
+[2025-08-17 14:40:52] Processed form data:
+[2025-08-17 14:40:52] Username: admin
+[2025-08-17 14:40:52] Email: admin@admin.com
+[2025-08-17 14:40:52] Role Name: admin
+[2025-08-17 14:40:52] Password length: 4
+[2025-08-17 14:40:52] Confirm password length: 4
+[2025-08-17 14:40:52] Rendering form
+[2025-08-17 14:40:52] CSRF Token: 5dc40a2e04a094f9d7f1cd5347ce735cc49464d914b2e2af6b43ef04531531fd
+[2025-08-17 14:40:59] Page loaded
+[2025-08-17 14:40:59] Form submitted via POST
+[2025-08-17 14:40:59] Processing form data
+[2025-08-17 14:40:59] RAW POST data: Array
+(
+    [csrf_token] => 5dc40a2e04a094f9d7f1cd5347ce735cc49464d914b2e2af6b43ef04531531fd
+    [username] => admin
+    [email] => admin@admin.com
+    [password] => 7788
+    [confirm_password] => 7788
+    [role] => admin
+)
+
+[2025-08-17 14:40:59] Processed form data:
+[2025-08-17 14:40:59] Username: admin
+[2025-08-17 14:40:59] Email: admin@admin.com
+[2025-08-17 14:40:59] Role Name: admin
+[2025-08-17 14:40:59] Password length: 4
+[2025-08-17 14:40:59] Confirm password length: 4
+[2025-08-17 14:40:59] Rendering form
+[2025-08-17 14:40:59] CSRF Token: 5dc40a2e04a094f9d7f1cd5347ce735cc49464d914b2e2af6b43ef04531531fd
+[2025-08-17 14:44:25] Page loaded
+[2025-08-17 14:44:25] Form submitted via POST
+[2025-08-17 14:44:25] Processing form data
+[2025-08-17 14:44:25] RAW POST data: Array
+(
+    [csrf_token] => 5dc40a2e04a094f9d7f1cd5347ce735cc49464d914b2e2af6b43ef04531531fd
+    [username] => admin
+    [email] => admin@admin.com
+    [password] => 7788
+    [confirm_password] => 7788
+    [role] => admin
+)
+
+[2025-08-17 14:44:25] Processed form data:
+[2025-08-17 14:44:25] Username: admin
+[2025-08-17 14:44:25] Email: admin@admin.com
+[2025-08-17 14:44:25] Role Name: admin
+[2025-08-17 14:44:25] Password length: 4
+[2025-08-17 14:44:25] Confirm password length: 4
+[2025-08-17 14:44:25] Rendering form
+[2025-08-17 14:44:25] CSRF Token: 5dc40a2e04a094f9d7f1cd5347ce735cc49464d914b2e2af6b43ef04531531fd
+[2025-08-17 14:44:36] Page loaded
+[2025-08-17 14:44:36] Form submitted via POST
+[2025-08-17 14:44:36] Processing form data
+[2025-08-17 14:44:36] RAW POST data: Array
+(
+    [csrf_token] => 5dc40a2e04a094f9d7f1cd5347ce735cc49464d914b2e2af6b43ef04531531fd
+    [username] => admin
+    [email] => admin@admin.com
+    [password] => 7788
+    [confirm_password] => 7788
+    [role] => teacher
+)
+
+[2025-08-17 14:44:36] Processed form data:
+[2025-08-17 14:44:36] Username: admin
+[2025-08-17 14:44:36] Email: admin@admin.com
+[2025-08-17 14:44:36] Role Name: teacher
+[2025-08-17 14:44:36] Password length: 4
+[2025-08-17 14:44:36] Confirm password length: 4
+[2025-08-17 14:44:36] Rendering form
+[2025-08-17 14:44:36] CSRF Token: 5dc40a2e04a094f9d7f1cd5347ce735cc49464d914b2e2af6b43ef04531531fd
+[2025-08-17 14:44:43] Page loaded
+[2025-08-17 14:44:43] Form submitted via POST
+[2025-08-17 14:44:43] Processing form data
+[2025-08-17 14:44:43] RAW POST data: Array
+(
+    [csrf_token] => 5dc40a2e04a094f9d7f1cd5347ce735cc49464d914b2e2af6b43ef04531531fd
+    [username] => admin
+    [email] => admin@admin.com
+    [password] => 7788
+    [confirm_password] => 7788
+    [role] => teacher
+)
+
+[2025-08-17 14:44:43] Processed form data:
+[2025-08-17 14:44:43] Username: admin
+[2025-08-17 14:44:43] Email: admin@admin.com
+[2025-08-17 14:44:43] Role Name: teacher
+[2025-08-17 14:44:43] Password length: 4
+[2025-08-17 14:44:43] Confirm password length: 4
+[2025-08-17 14:44:43] Rendering form
+[2025-08-17 14:44:43] CSRF Token: 5dc40a2e04a094f9d7f1cd5347ce735cc49464d914b2e2af6b43ef04531531fd
+[2025-08-17 14:45:29] Page loaded
+[2025-08-17 14:45:29] Rendering form
+[2025-08-17 14:45:29] CSRF Token: 5dc40a2e04a094f9d7f1cd5347ce735cc49464d914b2e2af6b43ef04531531fd
+[2025-08-17 14:45:50] Page loaded
+[2025-08-17 14:45:50] Form submitted via POST
+[2025-08-17 14:45:50] Processing form data
+[2025-08-17 14:45:50] RAW POST data: Array
+(
+    [csrf_token] => 5dc40a2e04a094f9d7f1cd5347ce735cc49464d914b2e2af6b43ef04531531fd
+    [username] => admin
+    [email] => admin@admin.com
+    [password] => 7788
+    [confirm_password] => 7788
+    [role] => admin
+)
+
+[2025-08-17 14:45:50] Processed form data:
+[2025-08-17 14:45:50] Username: admin
+[2025-08-17 14:45:50] Email: admin@admin.com
+[2025-08-17 14:45:50] Role Name: admin
+[2025-08-17 14:45:50] Password length: 4
+[2025-08-17 14:45:50] Confirm password length: 4
+[2025-08-17 14:45:50] Rendering form
+[2025-08-17 14:45:50] CSRF Token: 5dc40a2e04a094f9d7f1cd5347ce735cc49464d914b2e2af6b43ef04531531fd
+[2025-08-17 14:50:08] Page loaded
+[2025-08-17 14:50:31] Page loaded
+[2025-08-17 14:50:31] Rendering form
+[2025-08-17 14:50:31] CSRF Token: 5dc40a2e04a094f9d7f1cd5347ce735cc49464d914b2e2af6b43ef04531531fd
+[2025-08-17 14:50:49] Page loaded
+[2025-08-17 14:50:49] Processing form data
+[2025-08-17 14:50:49] RAW POST data: Array
+(
+    [csrf_token] => 5dc40a2e04a094f9d7f1cd5347ce735cc49464d914b2e2af6b43ef04531531fd
+    [username] => admin
+    [email] => admin@admin.com
+    [password] => 7788
+    [confirm_password] => 7788
+    [role] => admin
+)
+
+[2025-08-17 14:50:49] Processed form data:
+[2025-08-17 14:50:49] Username: admin
+[2025-08-17 14:50:49] Email: admin@admin.com
+[2025-08-17 14:50:49] Role Name: admin
+[2025-08-17 14:50:49] Password length: 4
+[2025-08-17 14:50:49] Confirm password length: 4
+[2025-08-17 14:50:49] Rendering form
+[2025-08-17 14:50:49] CSRF Token: 5dc40a2e04a094f9d7f1cd5347ce735cc49464d914b2e2af6b43ef04531531fd
+[2025-08-17 14:51:06] Page loaded
+[2025-08-17 14:51:06] Rendering form
+[2025-08-17 14:51:06] CSRF Token: 5dc40a2e04a094f9d7f1cd5347ce735cc49464d914b2e2af6b43ef04531531fd
+[2025-08-17 14:57:30] Page loaded
+[2025-08-17 14:57:30] Rendering form
+[2025-08-17 14:57:30] CSRF Token: eb866e560fd82141df938f9a908044bfc7e75adf845ca6bc4f1d725b729151be
+[2025-08-17 14:57:51] Page loaded
+[2025-08-17 14:57:51] Processing form data
+[2025-08-17 14:57:51] RAW POST data: Array
+(
+    [csrf_token] => eb866e560fd82141df938f9a908044bfc7e75adf845ca6bc4f1d725b729151be
+    [username] => admin
+    [email] => admin@admin.com
+    [password] => 7788
+    [confirm_password] => 7788
+    [role] => admin
+)
+
+[2025-08-17 14:57:51] Processed form data:
+[2025-08-17 14:57:51] Username: admin
+[2025-08-17 14:57:51] Email: admin@admin.com
+[2025-08-17 14:57:51] Role Name: admin
+[2025-08-17 14:57:51] Password length: 4
+[2025-08-17 14:57:51] Confirm password length: 4
+[2025-08-17 14:57:51] Validation errors found: Password must be at least 6 characters long.
+[2025-08-17 14:57:51] Page loaded
+[2025-08-17 14:57:51] Rendering form
+[2025-08-17 14:57:51] CSRF Token: eb866e560fd82141df938f9a908044bfc7e75adf845ca6bc4f1d725b729151be
+[2025-08-17 14:58:17] Page loaded
+[2025-08-17 14:58:17] Rendering form
+[2025-08-17 14:58:17] CSRF Token: 5dc40a2e04a094f9d7f1cd5347ce735cc49464d914b2e2af6b43ef04531531fd
+[2025-08-17 15:08:04] Page loaded
+[2025-08-17 15:08:04] Rendering form
+[2025-08-17 15:08:04] CSRF Token: 5dc40a2e04a094f9d7f1cd5347ce735cc49464d914b2e2af6b43ef04531531fd
+[2025-08-17 15:08:28] Page loaded
+[2025-08-17 15:08:28] Processing form data
+[2025-08-17 15:08:28] RAW POST data: Array
+(
+    [csrf_token] => 5dc40a2e04a094f9d7f1cd5347ce735cc49464d914b2e2af6b43ef04531531fd
+    [username] => admin
+    [email] => admin@admin.com
+    [password] => 7788
+    [confirm_password] => 7788
+    [role] => admin
+)
+
+[2025-08-17 15:08:28] Processed form data:
+[2025-08-17 15:08:28] Username: admin
+[2025-08-17 15:08:28] Email: admin@admin.com
+[2025-08-17 15:08:28] Role Name: admin
+[2025-08-17 15:08:28] Password length: 4
+[2025-08-17 15:08:28] Confirm password length: 4
+[2025-08-17 15:08:28] Validation errors found: Password must be at least 6 characters long.
+[2025-08-17 15:08:28] Page loaded
+[2025-08-17 15:08:28] Rendering form
+[2025-08-17 15:08:28] CSRF Token: 5dc40a2e04a094f9d7f1cd5347ce735cc49464d914b2e2af6b43ef04531531fd
+[2025-08-17 15:10:09] Page loaded
+[2025-08-17 15:10:09] Rendering form
+[2025-08-17 15:10:09] CSRF Token: 61a8a66350fd98f91de36bb44a889cbc3fa598f671c4f62cdc79d1ac64187641
+[2025-08-17 15:10:24] Page loaded
+[2025-08-17 15:10:24] Processing form data
+[2025-08-17 15:10:24] RAW POST data: Array
+(
+    [csrf_token] => 61a8a66350fd98f91de36bb44a889cbc3fa598f671c4f62cdc79d1ac64187641
+    [username] => admin
+    [email] => as@as.com
+    [password] => 7788
+    [confirm_password] => 7788
+    [role] => teacher
+)
+
+[2025-08-17 15:10:24] Processed form data:
+[2025-08-17 15:10:24] Username: admin
+[2025-08-17 15:10:24] Email: as@as.com
+[2025-08-17 15:10:24] Role Name: teacher
+[2025-08-17 15:10:24] Password length: 4
+[2025-08-17 15:10:24] Confirm password length: 4
+[2025-08-17 15:10:24] Validation errors found: Password must be at least 6 characters long.
+[2025-08-17 15:10:24] Page loaded
+[2025-08-17 15:10:24] Rendering form
+[2025-08-17 15:10:24] CSRF Token: 61a8a66350fd98f91de36bb44a889cbc3fa598f671c4f62cdc79d1ac64187641
+[2025-08-17 15:59:55] Page loaded
+[2025-08-17 15:59:55] Rendering form
+[2025-08-17 15:59:55] CSRF Token: 3220f75ee757e5e810e8cb03f87dcf0e92a2435e6675fda0bbb6e916fe929a7f
+[2025-08-17 16:00:20] Page loaded
+[2025-08-17 16:00:20] Processing form data
+[2025-08-17 16:00:20] RAW POST data: Array
+(
+    [csrf_token] => 3220f75ee757e5e810e8cb03f87dcf0e92a2435e6675fda0bbb6e916fe929a7f
+    [username] => admin1
+    [email] => ckgeek55@gmail.com
+    [password] => 778899
+    [confirm_password] => 778899
+    [role] => student
+)
+
+[2025-08-17 16:00:20] Processed form data:
+[2025-08-17 16:00:20] Username: admin1
+[2025-08-17 16:00:20] Email: ckgeek55@gmail.com
+[2025-08-17 16:00:20] Role Name: student
+[2025-08-17 16:00:20] Password length: 6
+[2025-08-17 16:00:20] Confirm password length: 6
+[2025-08-17 16:00:20] Looking up role ID for role: student
+[2025-08-17 16:00:20] Role query executed
+[2025-08-17 16:00:20] Found role ID: 3
+[2025-08-17 16:00:20] 
+=== Starting User Creation ===
+[2025-08-17 16:00:20] No validation errors found
+[2025-08-17 16:00:20] Transaction started
+[2025-08-17 16:00:20] No duplicates found, creating user
+[2025-08-17 16:00:20] Password hashed
+[2025-08-17 16:00:20] Preparing SQL: INSERT INTO users (username, email, password, role_id) VALUES (:username, :email, :password, :role_id)
+[2025-08-17 16:00:20] Parameters prepared: Array
+(
+    [:username] => admin1
+    [:email] => ckgeek55@gmail.com
+    [:password] => $2y$10$4vWBuVyG/x9DaM0WmdLk3.CXzBgoT6BwkcnPoCPP8mQNFCb4yKnae
+    [:role_id] => 3
+)
+
+[2025-08-17 16:00:20] Execute result: SUCCESS
+[2025-08-17 16:00:20] New user ID: 4
+[2025-08-17 16:00:20] User verified in database: Array
+(
+    [id] => 4
+    [username] => admin1
+    [email] => ckgeek55@gmail.com
+    [password] => $2y$10$4vWBuVyG/x9DaM0WmdLk3.CXzBgoT6BwkcnPoCPP8mQNFCb4yKnae
+    [role_id] => 3
+    [created_at] => 2025-08-17 19:30:20
+    [updated_at] => 2025-08-17 19:30:20
+)
+
+[2025-08-17 16:00:20] Committing transaction
+[2025-08-17 16:00:20] Transaction committed successfully
+[2025-08-17 16:00:20] Setting success message
+[2025-08-17 16:00:20] === User Creation Complete ===
+[2025-08-17 16:00:20] Redirecting to list.php
+[2025-08-17 17:54:09] Page loaded
+[2025-08-19 07:02:53] Page loaded
+[2025-08-19 07:02:53] Rendering form
+[2025-08-19 07:02:53] CSRF Token: bfa00f3d636d9377887242acd2ce2fda0640ab020abc2c4aca244e1efda42e35
+[2025-08-19 08:33:27] Page loaded
+[2025-08-19 08:33:27] Rendering form
+[2025-08-19 08:33:27] CSRF Token: bfa00f3d636d9377887242acd2ce2fda0640ab020abc2c4aca244e1efda42e35
+[2025-08-19 08:41:20] Page loaded
+[2025-08-19 08:41:20] Rendering form
+[2025-08-19 08:41:20] CSRF Token: bfa00f3d636d9377887242acd2ce2fda0640ab020abc2c4aca244e1efda42e35
+[2025-08-19 08:51:37] Page loaded
+[2025-08-19 08:51:37] Rendering form
+[2025-08-19 08:51:37] CSRF Token: bfa00f3d636d9377887242acd2ce2fda0640ab020abc2c4aca244e1efda42e35
+[2025-08-19 08:53:21] Page loaded
+[2025-08-19 08:53:21] Processing form data
+[2025-08-19 08:53:21] RAW POST data: Array
+(
+    [csrf_token] => bfa00f3d636d9377887242acd2ce2fda0640ab020abc2c4aca244e1efda42e35
+    [username] => Rosi Teacher
+    [email] => rosi@gmail.com
+    [password] => rosi123
+    [confirm_password] => rosi123
+    [role] => teacher
+)
+
+[2025-08-19 08:53:21] Processed form data:
+[2025-08-19 08:53:21] Username: Rosi Teacher
+[2025-08-19 08:53:21] Email: rosi@gmail.com
+[2025-08-19 08:53:21] Role Name: teacher
+[2025-08-19 08:53:21] Password length: 7
+[2025-08-19 08:53:21] Confirm password length: 7
+[2025-08-19 08:53:21] Looking up role ID for role: teacher
+[2025-08-19 08:53:21] Role query executed
+[2025-08-19 08:53:21] Found role ID: 2
+[2025-08-19 08:53:21] 
+=== Starting User Creation ===
+[2025-08-19 08:53:21] No validation errors found
+[2025-08-19 08:53:21] Transaction started
+[2025-08-19 08:53:21] No duplicates found, creating user
+[2025-08-19 08:53:21] Password hashed
+[2025-08-19 08:53:21] Preparing SQL: INSERT INTO users (username, email, password, role_id) VALUES (:username, :email, :password, :role_id)
+[2025-08-19 08:53:21] Parameters prepared: Array
+(
+    [:username] => Rosi Teacher
+    [:email] => rosi@gmail.com
+    [:password] => $2y$10$VipbjFYJe/NSeWeaeNP3NufeJv29CrDLEKUzCN6f5/DLKGBVMxWIO
+    [:role_id] => 2
+)
+
+[2025-08-19 08:53:21] Execute result: SUCCESS
+[2025-08-19 08:53:21] New user ID: 8
+[2025-08-19 08:53:21] User verified in database: Array
+(
+    [id] => 8
+    [username] => Rosi Teacher
+    [email] => rosi@gmail.com
+    [password] => $2y$10$VipbjFYJe/NSeWeaeNP3NufeJv29CrDLEKUzCN6f5/DLKGBVMxWIO
+    [role_id] => 2
+    [created_at] => 2025-08-19 12:23:21
+    [updated_at] => 2025-08-19 12:23:21
+)
+
+[2025-08-19 08:53:21] Committing transaction
+[2025-08-19 08:53:21] Transaction committed successfully
+[2025-08-19 08:53:21] Setting success message
+[2025-08-19 08:53:21] === User Creation Complete ===
+[2025-08-19 08:53:21] Redirecting to list.php
+[2025-08-19 08:57:33] Page loaded
+[2025-08-19 08:57:33] Rendering form
+[2025-08-19 08:57:33] CSRF Token: bfa00f3d636d9377887242acd2ce2fda0640ab020abc2c4aca244e1efda42e35
+[2025-08-19 08:58:17] Page loaded
+[2025-08-19 08:58:17] Processing form data
+[2025-08-19 08:58:17] RAW POST data: Array
+(
+    [csrf_token] => bfa00f3d636d9377887242acd2ce2fda0640ab020abc2c4aca244e1efda42e35
+    [username] => teacher
+    [email] => sudda@gmail.com
+    [password] => 778899
+    [confirm_password] => 778899
+    [role] => teacher
+)
+
+[2025-08-19 08:58:17] Processed form data:
+[2025-08-19 08:58:17] Username: teacher
+[2025-08-19 08:58:17] Email: sudda@gmail.com
+[2025-08-19 08:58:17] Role Name: teacher
+[2025-08-19 08:58:17] Password length: 6
+[2025-08-19 08:58:17] Confirm password length: 6
+[2025-08-19 08:58:17] Looking up role ID for role: teacher
+[2025-08-19 08:58:17] Role query executed
+[2025-08-19 08:58:17] Found role ID: 2
+[2025-08-19 08:58:17] 
+=== Starting User Creation ===
+[2025-08-19 08:58:17] No validation errors found
+[2025-08-19 08:58:17] Transaction started
+[2025-08-19 08:58:17] No duplicates found, creating user
+[2025-08-19 08:58:18] Password hashed
+[2025-08-19 08:58:18] Preparing SQL: INSERT INTO users (username, email, password, role_id) VALUES (:username, :email, :password, :role_id)
+[2025-08-19 08:58:18] Parameters prepared: Array
+(
+    [:username] => teacher
+    [:email] => sudda@gmail.com
+    [:password] => $2y$10$nPwE75GMctmibXS8BHwLdOGK2zc6nv19f77iY7k.G3L3uYLDrzxJ.
+    [:role_id] => 2
+)
+
+[2025-08-19 08:58:18] Execute result: SUCCESS
+[2025-08-19 08:58:18] New user ID: 9
+[2025-08-19 08:58:18] User verified in database: Array
+(
+    [id] => 9
+    [username] => teacher
+    [email] => sudda@gmail.com
+    [password] => $2y$10$nPwE75GMctmibXS8BHwLdOGK2zc6nv19f77iY7k.G3L3uYLDrzxJ.
+    [role_id] => 2
+    [created_at] => 2025-08-19 12:28:18
+    [updated_at] => 2025-08-19 12:28:18
+)
+
+[2025-08-19 08:58:18] Committing transaction
+[2025-08-19 08:58:18] Transaction committed successfully
+[2025-08-19 08:58:18] Setting success message
+[2025-08-19 08:58:18] === User Creation Complete ===
+[2025-08-19 08:58:18] Redirecting to list.php
+[2025-08-19 10:49:01] Page loaded
+[2025-08-19 10:49:01] Rendering form
+[2025-08-19 10:49:01] CSRF Token: bfa00f3d636d9377887242acd2ce2fda0640ab020abc2c4aca244e1efda42e35
+[2025-08-20 07:38:01] Page loaded
+[2025-08-20 07:38:01] Rendering form
+[2025-08-20 07:38:01] CSRF Token: 19c00c4f9388c8196cd386a488ea8c2658ab2a248785e33b4806c692df711f77
+[2025-08-20 07:39:00] Page loaded
+[2025-08-20 07:39:00] Processing form data
+[2025-08-20 07:39:00] RAW POST data: Array
+(
+    [csrf_token] => 19c00c4f9388c8196cd386a488ea8c2658ab2a248785e33b4806c692df711f77
+    [username] => Madhu Teacher
+    [email] => maduteacher@gmail.com
+    [password] => 778899
+    [confirm_password] => 778899
+    [role] => teacher
+)
+
+[2025-08-20 07:39:00] Processed form data:
+[2025-08-20 07:39:00] Username: Madhu Teacher
+[2025-08-20 07:39:00] Email: maduteacher@gmail.com
+[2025-08-20 07:39:00] Role Name: teacher
+[2025-08-20 07:39:00] Password length: 6
+[2025-08-20 07:39:00] Confirm password length: 6
+[2025-08-20 07:39:00] Looking up role ID for role: teacher
+[2025-08-20 07:39:00] Role query executed
+[2025-08-20 07:39:00] Found role ID: 2
+[2025-08-20 07:39:00] 
+=== Starting User Creation ===
+[2025-08-20 07:39:00] No validation errors found
+[2025-08-20 07:39:00] Transaction started
+[2025-08-20 07:39:00] No duplicates found, creating user
+[2025-08-20 07:39:00] Password hashed
+[2025-08-20 07:39:00] Preparing SQL: INSERT INTO users (username, email, password, role_id) VALUES (:username, :email, :password, :role_id)
+[2025-08-20 07:39:00] Parameters prepared: Array
+(
+    [:username] => Madhu Teacher
+    [:email] => maduteacher@gmail.com
+    [:password] => $2y$10$x22XHdLZCpwCq7dXvvSyFeafY4trGom4RNgzBKh5NssQhi6qv64VG
+    [:role_id] => 2
+)
+
+[2025-08-20 07:39:00] Execute result: SUCCESS
+[2025-08-20 07:39:00] New user ID: 10
+[2025-08-20 07:39:00] User verified in database: Array
+(
+    [id] => 10
+    [username] => Madhu Teacher
+    [email] => maduteacher@gmail.com
+    [password] => $2y$10$x22XHdLZCpwCq7dXvvSyFeafY4trGom4RNgzBKh5NssQhi6qv64VG
+    [role_id] => 2
+    [created_at] => 2025-08-20 11:09:00
+    [updated_at] => 2025-08-20 11:09:00
+)
+
+[2025-08-20 07:39:00] Committing transaction
+[2025-08-20 07:39:00] Transaction committed successfully
+[2025-08-20 07:39:00] Setting success message
+[2025-08-20 07:39:00] === User Creation Complete ===
+[2025-08-20 07:39:00] Redirecting to list.php
+[2025-08-21 07:59:44] Page loaded
+[2025-08-21 07:59:44] Rendering form
+[2025-08-21 07:59:44] CSRF Token: a6ecf6220f5b6359858ca18bee09fb17911e9d5936ad10836e336732a12774d4
+[2025-08-21 08:01:07] Page loaded
+[2025-08-21 08:01:07] Rendering form
+[2025-08-21 08:01:07] CSRF Token: a6ecf6220f5b6359858ca18bee09fb17911e9d5936ad10836e336732a12774d4
+[2025-08-21 08:02:06] Page loaded
+[2025-08-21 08:02:06] Processing form data
+[2025-08-21 08:02:06] RAW POST data: Array
+(
+    [csrf_token] => a6ecf6220f5b6359858ca18bee09fb17911e9d5936ad10836e336732a12774d4
+    [username] => maheshika
+    [email] => maheshika@gmail.com
+    [password] => 778899
+    [confirm_password] => 778899
+    [role] => teacher
+)
+
+[2025-08-21 08:02:06] Processed form data:
+[2025-08-21 08:02:06] Username: maheshika
+[2025-08-21 08:02:06] Email: maheshika@gmail.com
+[2025-08-21 08:02:06] Role Name: teacher
+[2025-08-21 08:02:06] Password length: 6
+[2025-08-21 08:02:06] Confirm password length: 6
+[2025-08-21 08:02:06] Looking up role ID for role: teacher
+[2025-08-21 08:02:06] Role query executed
+[2025-08-21 08:02:06] Found role ID: 2
+[2025-08-21 08:02:06] 
+=== Starting User Creation ===
+[2025-08-21 08:02:06] No validation errors found
+[2025-08-21 08:02:06] Transaction started
+[2025-08-21 08:02:06] No duplicates found, creating user
+[2025-08-21 08:02:06] Password hashed
+[2025-08-21 08:02:06] Preparing SQL: INSERT INTO users (username, email, password, role_id) VALUES (:username, :email, :password, :role_id)
+[2025-08-21 08:02:06] Parameters prepared: Array
+(
+    [:username] => maheshika
+    [:email] => maheshika@gmail.com
+    [:password] => $2y$10$iBuY1aHgn8f6U7HtvkHnMOn2dxz0DhaBgiKE1XkEG9hQgZm8sHQ1O
+    [:role_id] => 2
+)
+
+[2025-08-21 08:02:06] Execute result: SUCCESS
+[2025-08-21 08:02:06] New user ID: 11
+[2025-08-21 08:02:06] User verified in database: Array
+(
+    [id] => 11
+    [username] => maheshika
+    [email] => maheshika@gmail.com
+    [password] => $2y$10$iBuY1aHgn8f6U7HtvkHnMOn2dxz0DhaBgiKE1XkEG9hQgZm8sHQ1O
+    [role_id] => 2
+    [created_at] => 2025-08-21 11:32:06
+    [updated_at] => 2025-08-21 11:32:06
+)
+
+[2025-08-21 08:02:06] Committing transaction
+[2025-08-21 08:02:06] Transaction committed successfully
+[2025-08-21 08:02:06] Setting success message
+[2025-08-21 08:02:06] === User Creation Complete ===
+[2025-08-21 08:02:06] Redirecting to list.php
+[2025-08-21 08:06:32] Page loaded
+[2025-08-21 08:06:32] Rendering form
+[2025-08-21 08:06:32] CSRF Token: a6ecf6220f5b6359858ca18bee09fb17911e9d5936ad10836e336732a12774d4
+[2025-08-21 08:06:54] Page loaded
+[2025-08-21 08:06:54] Processing form data
+[2025-08-21 08:06:54] RAW POST data: Array
+(
+    [csrf_token] => a6ecf6220f5b6359858ca18bee09fb17911e9d5936ad10836e336732a12774d4
+    [username] => chamindu
+    [email] => chamidukawi@gmail.com
+    [password] => 778899
+    [confirm_password] => 778899
+    [role] => teacher
+)
+
+[2025-08-21 08:06:54] Processed form data:
+[2025-08-21 08:06:54] Username: chamindu
+[2025-08-21 08:06:54] Email: chamidukawi@gmail.com
+[2025-08-21 08:06:54] Role Name: teacher
+[2025-08-21 08:06:54] Password length: 6
+[2025-08-21 08:06:54] Confirm password length: 6
+[2025-08-21 08:06:54] Looking up role ID for role: teacher
+[2025-08-21 08:06:54] Role query executed
+[2025-08-21 08:06:54] Found role ID: 2
+[2025-08-21 08:06:54] 
+=== Starting User Creation ===
+[2025-08-21 08:06:54] No validation errors found
+[2025-08-21 08:06:54] Transaction started
+[2025-08-21 08:06:54] No duplicates found, creating user
+[2025-08-21 08:06:54] Password hashed
+[2025-08-21 08:06:54] Preparing SQL: INSERT INTO users (username, email, password, role_id) VALUES (:username, :email, :password, :role_id)
+[2025-08-21 08:06:54] Parameters prepared: Array
+(
+    [:username] => chamindu
+    [:email] => chamidukawi@gmail.com
+    [:password] => $2y$10$JL.kgjewGPgIjnAF5PR8JOQY4ag5K4fvj2gFIrMc8Efr4tRtNXavC
+    [:role_id] => 2
+)
+
+[2025-08-21 08:06:54] Execute result: SUCCESS
+[2025-08-21 08:06:54] New user ID: 12
+[2025-08-21 08:06:54] User verified in database: Array
+(
+    [id] => 12
+    [username] => chamindu
+    [email] => chamidukawi@gmail.com
+    [password] => $2y$10$JL.kgjewGPgIjnAF5PR8JOQY4ag5K4fvj2gFIrMc8Efr4tRtNXavC
+    [role_id] => 2
+    [created_at] => 2025-08-21 11:36:54
+    [updated_at] => 2025-08-21 11:36:54
+)
+
+[2025-08-21 08:06:54] Committing transaction
+[2025-08-21 08:06:54] Transaction committed successfully
+[2025-08-21 08:06:54] Setting success message
+[2025-08-21 08:06:54] === User Creation Complete ===
+[2025-08-21 08:06:54] Redirecting to list.php with refresh parameter
+[2025-08-21 08:13:06] Page loaded
+[2025-08-21 08:13:06] Rendering form
+[2025-08-21 08:13:06] CSRF Token: a6ecf6220f5b6359858ca18bee09fb17911e9d5936ad10836e336732a12774d4
+[2025-08-21 08:13:24] Page loaded
+[2025-08-21 08:13:24] Processing form data
+[2025-08-21 08:13:24] RAW POST data: Array
+(
+    [csrf_token] => a6ecf6220f5b6359858ca18bee09fb17911e9d5936ad10836e336732a12774d4
+    [username] => cha
+    [email] => chamidukawi@gmail.com
+    [password] => 778899
+    [confirm_password] => 778899
+    [role] => teacher
+)
+
+[2025-08-21 08:13:24] Processed form data:
+[2025-08-21 08:13:24] Username: cha
+[2025-08-21 08:13:24] Email: chamidukawi@gmail.com
+[2025-08-21 08:13:24] Role Name: teacher
+[2025-08-21 08:13:24] Password length: 6
+[2025-08-21 08:13:24] Confirm password length: 6
+[2025-08-21 08:13:24] Looking up role ID for role: teacher
+[2025-08-21 08:13:24] Role query executed
+[2025-08-21 08:13:24] Found role ID: 2
+[2025-08-21 08:13:24] 
+=== Starting User Creation ===
+[2025-08-21 08:13:24] No validation errors found
+[2025-08-21 08:13:24] Transaction started
+[2025-08-21 08:13:24] No duplicates found, creating user
+[2025-08-21 08:13:24] Password hashed
+[2025-08-21 08:13:24] Preparing SQL: INSERT INTO users (username, email, password, role_id) VALUES (:username, :email, :password, :role_id)
+[2025-08-21 08:13:24] Parameters prepared: Array
+(
+    [:username] => cha
+    [:email] => chamidukawi@gmail.com
+    [:password] => $2y$10$2Ti0nJcrIfSzSpwx9cOg7uIbf8usanKwQVGvas13LNtq3KmT9eseu
+    [:role_id] => 2
+)
+
+[2025-08-21 08:13:24] Execute result: SUCCESS
+[2025-08-21 08:13:24] New user ID: 13
+[2025-08-21 08:13:24] User verified in database: Array
+(
+    [id] => 13
+    [username] => cha
+    [email] => chamidukawi@gmail.com
+    [password] => $2y$10$2Ti0nJcrIfSzSpwx9cOg7uIbf8usanKwQVGvas13LNtq3KmT9eseu
+    [role_id] => 2
+    [created_at] => 2025-08-21 11:43:24
+    [updated_at] => 2025-08-21 11:43:24
+)
+
+[2025-08-21 08:13:24] Committing transaction
+[2025-08-21 08:13:24] Transaction committed successfully
+[2025-08-21 08:13:24] Setting success message
+[2025-08-21 08:13:24] === User Creation Complete ===
+[2025-08-21 08:16:16] Page loaded
+[2025-08-21 08:16:16] Rendering form
+[2025-08-21 08:16:16] CSRF Token: a6ecf6220f5b6359858ca18bee09fb17911e9d5936ad10836e336732a12774d4
+[2025-08-21 08:16:31] Page loaded
+[2025-08-21 08:16:31] Processing form data
+[2025-08-21 08:16:31] RAW POST data: Array
+(
+    [csrf_token] => a6ecf6220f5b6359858ca18bee09fb17911e9d5936ad10836e336732a12774d4
+    [username] => dfv
+    [email] => chamidukawi@gmail.com
+    [password] => 778899
+    [confirm_password] => 778899
+    [role] => teacher
+)
+
+[2025-08-21 08:16:31] Processed form data:
+[2025-08-21 08:16:31] Username: dfv
+[2025-08-21 08:16:31] Email: chamidukawi@gmail.com
+[2025-08-21 08:16:31] Role Name: teacher
+[2025-08-21 08:16:31] Password length: 6
+[2025-08-21 08:16:31] Confirm password length: 6
+[2025-08-21 08:16:31] Looking up role ID for role: teacher
+[2025-08-21 08:16:31] Role query executed
+[2025-08-21 08:16:31] Found role ID: 2
+[2025-08-21 08:16:31] 
+=== Starting User Creation ===
+[2025-08-21 08:16:31] No validation errors found
+[2025-08-21 08:16:31] Transaction started
+[2025-08-21 08:16:31] No duplicates found, creating user
+[2025-08-21 08:16:31] Password hashed
+[2025-08-21 08:16:31] Preparing SQL: INSERT INTO users (username, email, password, role_id) VALUES (:username, :email, :password, :role_id)
+[2025-08-21 08:16:31] Parameters prepared: Array
+(
+    [:username] => dfv
+    [:email] => chamidukawi@gmail.com
+    [:password] => $2y$10$IVMgDbDj1wTt7D.GEtgaguVFJdsthSV3hbZ6fnl/gjQAyPDhXoMB6
+    [:role_id] => 2
+)
+
+[2025-08-21 08:16:31] Execute result: SUCCESS
+[2025-08-21 08:16:31] New user ID: 14
+[2025-08-21 08:16:31] User verified in database: Array
+(
+    [id] => 14
+    [username] => dfv
+    [email] => chamidukawi@gmail.com
+    [password] => $2y$10$IVMgDbDj1wTt7D.GEtgaguVFJdsthSV3hbZ6fnl/gjQAyPDhXoMB6
+    [role_id] => 2
+    [created_at] => 2025-08-21 11:46:31
+    [updated_at] => 2025-08-21 11:46:31
+)
+
+[2025-08-21 08:16:31] Committing transaction
+[2025-08-21 08:16:31] Transaction committed successfully
+[2025-08-21 08:16:31] Setting success message
+[2025-08-21 08:16:31] === User Creation Complete ===
+[2025-08-21 08:18:04] Page loaded
+[2025-08-21 08:18:04] Rendering form
+[2025-08-21 08:18:04] CSRF Token: a6ecf6220f5b6359858ca18bee09fb17911e9d5936ad10836e336732a12774d4
+[2025-08-21 08:18:31] Page loaded
+[2025-08-21 08:18:31] Rendering form
+[2025-08-21 08:18:31] CSRF Token: a6ecf6220f5b6359858ca18bee09fb17911e9d5936ad10836e336732a12774d4
+[2025-08-21 08:18:53] Page loaded
+[2025-08-21 08:18:53] Processing form data
+[2025-08-21 08:18:53] RAW POST data: Array
+(
+    [csrf_token] => a6ecf6220f5b6359858ca18bee09fb17911e9d5936ad10836e336732a12774d4
+    [username] => maheshika
+    [email] => maheshika@gmail.com
+    [password] => 778899
+    [confirm_password] => 778899
+    [role] => teacher
+)
+
+[2025-08-21 08:18:53] Processed form data:
+[2025-08-21 08:18:53] Username: maheshika
+[2025-08-21 08:18:53] Email: maheshika@gmail.com
+[2025-08-21 08:18:53] Role Name: teacher
+[2025-08-21 08:18:53] Password length: 6
+[2025-08-21 08:18:53] Confirm password length: 6
+[2025-08-21 08:18:53] Looking up role ID for role: teacher
+[2025-08-21 08:18:53] Role query executed
+[2025-08-21 08:18:53] Found role ID: 2
+[2025-08-21 08:18:53] 
+=== Starting User Creation ===
+[2025-08-21 08:18:53] No validation errors found
+[2025-08-21 08:18:53] Transaction started
+[2025-08-21 08:18:53] No duplicates found, creating user
+[2025-08-21 08:18:53] Password hashed
+[2025-08-21 08:18:53] Preparing SQL: INSERT INTO users (username, email, password, role_id) VALUES (:username, :email, :password, :role_id)
+[2025-08-21 08:18:53] Parameters prepared: Array
+(
+    [:username] => maheshika
+    [:email] => maheshika@gmail.com
+    [:password] => $2y$10$Sk8pC89fuliVHp2Q8F1niOjsOqoJ10A7CGddnsbma5Y6nKitJKugG
+    [:role_id] => 2
+)
+
+[2025-08-21 08:18:53] Execute result: SUCCESS
+[2025-08-21 08:18:53] New user ID: 15
+[2025-08-21 08:18:53] User verified in database: Array
+(
+    [id] => 15
+    [username] => maheshika
+    [email] => maheshika@gmail.com
+    [password] => $2y$10$Sk8pC89fuliVHp2Q8F1niOjsOqoJ10A7CGddnsbma5Y6nKitJKugG
+    [role_id] => 2
+    [created_at] => 2025-08-21 11:48:53
+    [updated_at] => 2025-08-21 11:48:53
+)
+
+[2025-08-21 08:18:53] Committing transaction
+[2025-08-21 08:18:53] Transaction committed successfully
+[2025-08-21 08:18:53] Setting success message
+[2025-08-21 08:18:53] === User Creation Complete ===
+[2025-08-21 11:04:05] Page loaded
+[2025-08-21 11:04:05] Rendering form
+[2025-08-21 11:04:05] CSRF Token: a6ecf6220f5b6359858ca18bee09fb17911e9d5936ad10836e336732a12774d4
+[2025-08-21 11:04:34] Page loaded
+[2025-08-21 11:04:34] Processing form data
+[2025-08-21 11:04:34] RAW POST data: Array
+(
+    [csrf_token] => a6ecf6220f5b6359858ca18bee09fb17911e9d5936ad10836e336732a12774d4
+    [username] => maheshika
+    [email] => maheshika@gmail.com
+    [password] => 778899
+    [confirm_password] => 778899
+    [role] => teacher
+)
+
+[2025-08-21 11:04:34] Processed form data:
+[2025-08-21 11:04:34] Username: maheshika
+[2025-08-21 11:04:34] Email: maheshika@gmail.com
+[2025-08-21 11:04:34] Role Name: teacher
+[2025-08-21 11:04:34] Password length: 6
+[2025-08-21 11:04:34] Confirm password length: 6
+[2025-08-21 11:04:34] Looking up role ID for role: teacher
+[2025-08-21 11:04:34] Role query executed
+[2025-08-21 11:04:34] Found role ID: 2
+[2025-08-21 11:04:34] 
+=== Starting User Creation ===
+[2025-08-21 11:04:34] No validation errors found
+[2025-08-21 11:04:34] Transaction started
+[2025-08-21 11:04:34] No duplicates found, creating user
+[2025-08-21 11:04:34] Password hashed
+[2025-08-21 11:04:34] Preparing SQL: INSERT INTO users (username, email, password, role_id) VALUES (:username, :email, :password, :role_id)
+[2025-08-21 11:04:34] Parameters prepared: Array
+(
+    [:username] => maheshika
+    [:email] => maheshika@gmail.com
+    [:password] => $2y$10$lXRTlfh2HBoW7.1mquuMOOfhME3AE9MUrPLqfLQMnxEJdPNDW/1KC
+    [:role_id] => 2
+)
+
+[2025-08-21 11:04:34] Execute result: SUCCESS
+[2025-08-21 11:04:34] New user ID: 13
+[2025-08-21 11:04:34] User verified in database: Array
+(
+    [id] => 13
+    [username] => maheshika
+    [email] => maheshika@gmail.com
+    [password] => $2y$10$lXRTlfh2HBoW7.1mquuMOOfhME3AE9MUrPLqfLQMnxEJdPNDW/1KC
+    [role_id] => 2
+    [created_at] => 2025-08-21 14:34:34
+    [updated_at] => 2025-08-21 14:34:34
+)
+
+[2025-08-21 11:04:34] Committing transaction
+[2025-08-21 11:04:34] Transaction committed successfully
+[2025-08-21 11:04:34] Setting success message
+[2025-08-21 11:04:34] === User Creation Complete ===
+[2025-08-22 03:30:13] Page loaded
+[2025-08-22 03:30:13] Rendering form
+[2025-08-22 03:30:13] CSRF Token: 67e919b4518111dc48419382adc8701ae28f8547845237a94191eb29973befa6
+[2025-08-22 03:31:13] Page loaded
+[2025-08-22 03:31:13] Processing form data
+[2025-08-22 03:31:13] RAW POST data: Array
+(
+    [csrf_token] => 67e919b4518111dc48419382adc8701ae28f8547845237a94191eb29973befa6
+    [username] => john
+    [email] => john@gmail.com
+    [password] => 778899
+    [confirm_password] => 778899
+    [role] => teacher
+)
+
+[2025-08-22 03:31:13] Processed form data:
+[2025-08-22 03:31:13] Username: john
+[2025-08-22 03:31:13] Email: john@gmail.com
+[2025-08-22 03:31:13] Role Name: teacher
+[2025-08-22 03:31:13] Password length: 6
+[2025-08-22 03:31:13] Confirm password length: 6
+[2025-08-22 03:31:13] Looking up role ID for role: teacher
+[2025-08-22 03:31:13] Role query executed
+[2025-08-22 03:31:13] Found role ID: 2
+[2025-08-22 03:31:13] 
+=== Starting User Creation ===
+[2025-08-22 03:31:13] No validation errors found
+[2025-08-22 03:31:13] Transaction started
+[2025-08-22 03:31:13] No duplicates found, creating user
+[2025-08-22 03:31:13] Password hashed
+[2025-08-22 03:31:13] Preparing SQL: INSERT INTO users (username, email, password, role_id) VALUES (:username, :email, :password, :role_id)
+[2025-08-22 03:31:13] Parameters prepared: Array
+(
+    [:username] => john
+    [:email] => john@gmail.com
+    [:password] => $2y$10$AZ9c40H/dLc12E0vbMs7ROy4LF5.0yUv99WkeXQrWeNApXuE1sVaG
+    [:role_id] => 2
+)
+
+[2025-08-22 03:31:13] Execute result: SUCCESS
+[2025-08-22 03:31:13] New user ID: 15
+[2025-08-22 03:31:13] User verified in database: Array
+(
+    [id] => 15
+    [username] => john
+    [email] => john@gmail.com
+    [password] => $2y$10$AZ9c40H/dLc12E0vbMs7ROy4LF5.0yUv99WkeXQrWeNApXuE1sVaG
+    [role_id] => 2
+    [created_at] => 2025-08-22 07:01:13
+    [updated_at] => 2025-08-22 07:01:13
+)
+
+[2025-08-22 03:31:13] Committing transaction
+[2025-08-22 03:31:13] Transaction committed successfully
+[2025-08-22 03:31:13] Setting success message
+[2025-08-22 03:31:13] === User Creation Complete ===
+[2025-08-22 03:38:51] Page loaded
+[2025-08-22 03:38:51] Rendering form
+[2025-08-22 03:38:51] CSRF Token: 67e919b4518111dc48419382adc8701ae28f8547845237a94191eb29973befa6
+[2025-08-22 03:39:26] Page loaded
+[2025-08-22 03:39:26] Processing form data
+[2025-08-22 03:39:26] RAW POST data: Array
+(
+    [csrf_token] => 67e919b4518111dc48419382adc8701ae28f8547845237a94191eb29973befa6
+    [username] => john
+    [email] => jhon@gmail.com
+    [password] => 778899
+    [confirm_password] => 778899
+    [role] => teacher
+)
+
+[2025-08-22 03:39:26] Processed form data:
+[2025-08-22 03:39:26] Username: john
+[2025-08-22 03:39:26] Email: jhon@gmail.com
+[2025-08-22 03:39:26] Role Name: teacher
+[2025-08-22 03:39:26] Password length: 6
+[2025-08-22 03:39:26] Confirm password length: 6
+[2025-08-22 03:39:26] Looking up role ID for role: teacher
+[2025-08-22 03:39:26] Role query executed
+[2025-08-22 03:39:26] Found role ID: 2
+[2025-08-22 03:39:26] 
+=== Starting User Creation ===
+[2025-08-22 03:39:26] No validation errors found
+[2025-08-22 03:39:26] Transaction started
+[2025-08-22 03:39:26] No duplicates found, creating user
+[2025-08-22 03:39:26] Password hashed
+[2025-08-22 03:39:26] Preparing SQL: INSERT INTO users (username, email, password, role_id) VALUES (:username, :email, :password, :role_id)
+[2025-08-22 03:39:26] Parameters prepared: Array
+(
+    [:username] => john
+    [:email] => jhon@gmail.com
+    [:password] => $2y$10$0jPTWhrsMaeYnHhT02uzmO.J.FDmBZuka/1gwl7FPlNl/OFg5u0Yi
+    [:role_id] => 2
+)
+
+[2025-08-22 03:39:26] Execute result: SUCCESS
+[2025-08-22 03:39:26] New user ID: 16
+[2025-08-22 03:39:26] User verified in database: Array
+(
+    [id] => 16
+    [username] => john
+    [email] => jhon@gmail.com
+    [password] => $2y$10$0jPTWhrsMaeYnHhT02uzmO.J.FDmBZuka/1gwl7FPlNl/OFg5u0Yi
+    [role_id] => 2
+    [created_at] => 2025-08-22 07:09:26
+    [updated_at] => 2025-08-22 07:09:26
+)
+
+[2025-08-22 03:39:26] Committing transaction
+[2025-08-22 03:39:26] Transaction committed successfully
+[2025-08-22 03:39:26] Setting success message
+[2025-08-22 03:39:26] === User Creation Complete ===
+[2025-08-22 03:46:35] Page loaded
+[2025-08-22 03:46:35] Rendering form
+[2025-08-22 03:46:35] CSRF Token: 67e919b4518111dc48419382adc8701ae28f8547845237a94191eb29973befa6
+[2025-08-22 03:47:05] Page loaded
+[2025-08-22 03:47:05] Processing form data
+[2025-08-22 03:47:05] RAW POST data: Array
+(
+    [csrf_token] => 67e919b4518111dc48419382adc8701ae28f8547845237a94191eb29973befa6
+    [username] => manager
+    [email] => manager@gmail.com
+    [password] => 778899
+    [confirm_password] => 778899
+    [role] => manager
+)
+
+[2025-08-22 03:47:05] Processed form data:
+[2025-08-22 03:47:05] Username: manager
+[2025-08-22 03:47:05] Email: manager@gmail.com
+[2025-08-22 03:47:05] Role Name: manager
+[2025-08-22 03:47:05] Password length: 6
+[2025-08-22 03:47:05] Confirm password length: 6
+[2025-08-22 03:47:05] Looking up role ID for role: manager
+[2025-08-22 03:47:05] Role query executed
+[2025-08-22 03:47:05] Found role ID: 4
+[2025-08-22 03:47:05] 
+=== Starting User Creation ===
+[2025-08-22 03:47:05] No validation errors found
+[2025-08-22 03:47:05] Transaction started
+[2025-08-22 03:47:05] No duplicates found, creating user
+[2025-08-22 03:47:05] Password hashed
+[2025-08-22 03:47:05] Preparing SQL: INSERT INTO users (username, email, password, role_id) VALUES (:username, :email, :password, :role_id)
+[2025-08-22 03:47:05] Parameters prepared: Array
+(
+    [:username] => manager
+    [:email] => manager@gmail.com
+    [:password] => $2y$10$W4R3lk8cZFTq0jaDruEbluzoM4gWb3h9SfSPAUGjAIM6ulkHTK.0y
+    [:role_id] => 4
+)
+
+[2025-08-22 03:47:05] Execute result: SUCCESS
+[2025-08-22 03:47:05] New user ID: 17
+[2025-08-22 03:47:05] User verified in database: Array
+(
+    [id] => 17
+    [username] => manager
+    [email] => manager@gmail.com
+    [password] => $2y$10$W4R3lk8cZFTq0jaDruEbluzoM4gWb3h9SfSPAUGjAIM6ulkHTK.0y
+    [role_id] => 4
+    [created_at] => 2025-08-22 07:17:05
+    [updated_at] => 2025-08-22 07:17:05
+)
+
+[2025-08-22 03:47:05] Committing transaction
+[2025-08-22 03:47:05] Transaction committed successfully
+[2025-08-22 03:47:05] Setting success message
+[2025-08-22 03:47:05] === User Creation Complete ===

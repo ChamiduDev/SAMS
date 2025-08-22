@@ -1,0 +1,123 @@
+[2025-08-17 14:33:49] Starting database verification...
+[2025-08-17 14:33:49] Connected to MySQL server successfully
+[2025-08-17 14:33:49] Database already exists
+[2025-08-17 14:33:49] Using database: sams_db
+[2025-08-17 14:33:49] Roles table exists
+[2025-08-17 14:33:49] Current roles: Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [name] => admin
+        )
+
+    [1] => Array
+        (
+            [id] => 3
+            [name] => student
+        )
+
+    [2] => Array
+        (
+            [id] => 2
+            [name] => teacher
+        )
+
+)
+
+[2025-08-17 14:33:49] Users table exists
+[2025-08-17 14:33:49] Users table structure: Array
+(
+    [0] => Array
+        (
+            [Field] => id
+            [Type] => int(11)
+            [Null] => NO
+            [Key] => PRI
+            [Default] => 
+            [Extra] => auto_increment
+        )
+
+    [1] => Array
+        (
+            [Field] => username
+            [Type] => varchar(50)
+            [Null] => NO
+            [Key] => UNI
+            [Default] => 
+            [Extra] => 
+        )
+
+    [2] => Array
+        (
+            [Field] => email
+            [Type] => varchar(100)
+            [Null] => NO
+            [Key] => UNI
+            [Default] => 
+            [Extra] => 
+        )
+
+    [3] => Array
+        (
+            [Field] => password
+            [Type] => varchar(255)
+            [Null] => NO
+            [Key] => 
+            [Default] => 
+            [Extra] => 
+        )
+
+    [4] => Array
+        (
+            [Field] => role_id
+            [Type] => int(11)
+            [Null] => NO
+            [Key] => MUL
+            [Default] => 
+            [Extra] => 
+        )
+
+    [5] => Array
+        (
+            [Field] => created_at
+            [Type] => timestamp
+            [Null] => NO
+            [Key] => 
+            [Default] => current_timestamp()
+            [Extra] => 
+        )
+
+    [6] => Array
+        (
+            [Field] => updated_at
+            [Type] => timestamp
+            [Null] => NO
+            [Key] => 
+            [Default] => current_timestamp()
+            [Extra] => on update current_timestamp()
+        )
+
+)
+
+[2025-08-17 14:33:49] Foreign key check: Array
+(
+    [0] => Array
+        (
+            [CONSTRAINT_CATALOG] => def
+            [CONSTRAINT_SCHEMA] => sams_db
+            [CONSTRAINT_NAME] => users_ibfk_1
+            [TABLE_CATALOG] => def
+            [TABLE_SCHEMA] => sams_db
+            [TABLE_NAME] => users
+            [COLUMN_NAME] => role_id
+            [ORDINAL_POSITION] => 1
+            [POSITION_IN_UNIQUE_CONSTRAINT] => 1
+            [REFERENCED_TABLE_SCHEMA] => sams_db
+            [REFERENCED_TABLE_NAME] => roles
+            [REFERENCED_COLUMN_NAME] => id
+        )
+
+)
+
+[2025-08-17 14:33:49] Database verification complete

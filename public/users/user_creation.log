@@ -1,0 +1,1346 @@
+[2025-08-17 14:50:49] === New User Creation Started ===
+[2025-08-17 14:50:49] POST data received:
+Array
+(
+    [csrf_token] => 5dc40a2e04a094f9d7f1cd5347ce735cc49464d914b2e2af6b43ef04531531fd
+    [username] => admin
+    [email] => admin@admin.com
+    [password] => 7788
+    [confirm_password] => 7788
+    [role] => admin
+)
+
+[2025-08-17 14:50:49] Session state:
+Array
+(
+    [user_id] => 2
+    [role_id] => 1
+    [role_name] => admin
+    [username] => admin
+    [role] => admin
+    [csrf_token] => 5dc40a2e04a094f9d7f1cd5347ce735cc49464d914b2e2af6b43ef04531531fd
+    [user_permissions] => Array
+        (
+        )
+
+    [last_role_id] => 1
+)
+
+[2025-08-17 14:50:49] Database connection verified
+[2025-08-17 14:57:51] === New User Creation Started ===
+[2025-08-17 14:57:51] POST data received:
+Array
+(
+    [csrf_token] => eb866e560fd82141df938f9a908044bfc7e75adf845ca6bc4f1d725b729151be
+    [username] => admin
+    [email] => admin@admin.com
+    [password] => 7788
+    [confirm_password] => 7788
+    [role] => admin
+)
+
+[2025-08-17 14:57:51] Session state:
+Array
+(
+    [user_id] => 1
+    [role] => admin
+    [role_name] => admin
+    [username] => testuser_1755432992
+    [csrf_token] => eb866e560fd82141df938f9a908044bfc7e75adf845ca6bc4f1d725b729151be
+    [error_message] => Invalid attendance record ID.
+    [role_id] => 1
+    [user_permissions] => Array
+        (
+            [0] => attendance_delete
+            [1] => attendance_list
+            [2] => attendance_mark
+            [3] => attendance_report
+            [4] => courses_add
+            [5] => courses_delete
+            [6] => courses_edit
+            [7] => courses_list
+            [8] => dashboard_view
+            [9] => exams_add
+            [10] => exams_delete
+            [11] => exams_edit
+            [12] => exams_list
+            [13] => exams_view
+            [14] => fees_assign
+            [15] => fees_edit
+            [16] => fees_list
+            [17] => fees_view
+            [18] => fee_structures_add
+            [19] => fee_structures_list
+            [20] => fee_types_add
+            [21] => fee_types_list
+            [22] => grades_delete
+            [23] => grades_edit
+            [24] => grades_list
+            [25] => grades_mark
+            [26] => notifications_create
+            [27] => notifications_delete
+            [28] => notifications_list
+            [29] => notifications_view
+            [30] => payments_list
+            [31] => payments_record
+            [32] => roles_add
+            [33] => roles_delete
+            [34] => roles_edit
+            [35] => roles_list
+            [36] => settings_grading_scale
+            [37] => settings_school_info
+            [38] => students_add
+            [39] => students_delete
+            [40] => students_edit
+            [41] => students_list
+            [42] => students_view
+            [43] => subjects_add
+            [44] => subjects_delete
+            [45] => subjects_edit
+            [46] => subjects_list
+            [47] => users_add
+            [48] => users_delete
+            [49] => users_edit
+            [50] => users_list
+        )
+
+    [last_role_id] => 1
+)
+
+[2025-08-17 14:57:51] Database connection verified
+[2025-08-17 15:08:28] === New User Creation Started ===
+[2025-08-17 15:08:28] POST data received:
+Array
+(
+    [csrf_token] => 5dc40a2e04a094f9d7f1cd5347ce735cc49464d914b2e2af6b43ef04531531fd
+    [username] => admin
+    [email] => admin@admin.com
+    [password] => 7788
+    [confirm_password] => 7788
+    [role] => admin
+)
+
+[2025-08-17 15:08:28] Session state:
+Array
+(
+    [user_id] => 2
+    [role_id] => 1
+    [role_name] => admin
+    [username] => test_user_1755434611
+    [role] => admin
+    [csrf_token] => 5dc40a2e04a094f9d7f1cd5347ce735cc49464d914b2e2af6b43ef04531531fd
+    [user_permissions] => Array
+        (
+            [0] => attendance_delete
+            [1] => attendance_list
+            [2] => attendance_mark
+            [3] => attendance_report
+            [4] => courses_add
+            [5] => courses_delete
+            [6] => courses_edit
+            [7] => courses_list
+            [8] => dashboard_view
+            [9] => exams_add
+            [10] => exams_delete
+            [11] => exams_edit
+            [12] => exams_list
+            [13] => exams_view
+            [14] => fees_assign
+            [15] => fees_edit
+            [16] => fees_list
+            [17] => fees_view
+            [18] => fee_structures_add
+            [19] => fee_structures_list
+            [20] => fee_types_add
+            [21] => fee_types_list
+            [22] => grades_delete
+            [23] => grades_edit
+            [24] => grades_list
+            [25] => grades_mark
+            [26] => notifications_create
+            [27] => notifications_delete
+            [28] => notifications_list
+            [29] => notifications_view
+            [30] => payments_list
+            [31] => payments_record
+            [32] => roles_add
+            [33] => roles_delete
+            [34] => roles_edit
+            [35] => roles_list
+            [36] => settings_grading_scale
+            [37] => settings_school_info
+            [38] => students_add
+            [39] => students_delete
+            [40] => students_edit
+            [41] => students_list
+            [42] => students_view
+            [43] => subjects_add
+            [44] => subjects_delete
+            [45] => subjects_edit
+            [46] => subjects_list
+            [47] => users_add
+            [48] => users_delete
+            [49] => users_edit
+            [50] => users_list
+        )
+
+    [last_role_id] => 1
+)
+
+[2025-08-17 15:08:28] Database connection verified
+[2025-08-17 15:10:24] === New User Creation Started ===
+[2025-08-17 15:10:24] POST data received:
+Array
+(
+    [csrf_token] => 61a8a66350fd98f91de36bb44a889cbc3fa598f671c4f62cdc79d1ac64187641
+    [username] => admin
+    [email] => as@as.com
+    [password] => 7788
+    [confirm_password] => 7788
+    [role] => teacher
+)
+
+[2025-08-17 15:10:24] Session state:
+Array
+(
+    [user_id] => 2
+    [role_id] => 1
+    [role_name] => admin
+    [username] => admin
+    [user_permissions] => Array
+        (
+            [0] => attendance_delete
+            [1] => attendance_list
+            [2] => attendance_mark
+            [3] => attendance_report
+            [4] => courses_add
+            [5] => courses_delete
+            [6] => courses_edit
+            [7] => courses_list
+            [8] => dashboard_view
+            [9] => exams_add
+            [10] => exams_delete
+            [11] => exams_edit
+            [12] => exams_list
+            [13] => exams_view
+            [14] => fees_assign
+            [15] => fees_edit
+            [16] => fees_list
+            [17] => fees_view
+            [18] => fee_structures_add
+            [19] => fee_structures_list
+            [20] => fee_types_add
+            [21] => fee_types_list
+            [22] => grades_delete
+            [23] => grades_edit
+            [24] => grades_list
+            [25] => grades_mark
+            [26] => notifications_create
+            [27] => notifications_delete
+            [28] => notifications_list
+            [29] => notifications_view
+            [30] => payments_list
+            [31] => payments_record
+            [32] => roles_add
+            [33] => roles_delete
+            [34] => roles_edit
+            [35] => roles_list
+            [36] => settings_grading_scale
+            [37] => settings_school_info
+            [38] => students_add
+            [39] => students_delete
+            [40] => students_edit
+            [41] => students_list
+            [42] => students_view
+            [43] => subjects_add
+            [44] => subjects_delete
+            [45] => subjects_edit
+            [46] => subjects_list
+            [47] => users_add
+            [48] => users_delete
+            [49] => users_edit
+            [50] => users_list
+        )
+
+    [last_role_id] => 1
+    [csrf_token] => 61a8a66350fd98f91de36bb44a889cbc3fa598f671c4f62cdc79d1ac64187641
+)
+
+[2025-08-17 15:10:24] Database connection verified
+[2025-08-17 16:00:20] === New User Creation Started ===
+[2025-08-17 16:00:20] POST data received:
+Array
+(
+    [csrf_token] => 3220f75ee757e5e810e8cb03f87dcf0e92a2435e6675fda0bbb6e916fe929a7f
+    [username] => admin1
+    [email] => ckgeek55@gmail.com
+    [password] => 778899
+    [confirm_password] => 778899
+    [role] => student
+)
+
+[2025-08-17 16:00:20] Session state:
+Array
+(
+    [user_id] => 2
+    [role_id] => 1
+    [role_name] => admin
+    [username] => admin
+    [user_permissions] => Array
+        (
+            [0] => attendance_delete
+            [1] => attendance_list
+            [2] => attendance_mark
+            [3] => attendance_report
+            [4] => courses_add
+            [5] => courses_delete
+            [6] => courses_edit
+            [7] => courses_list
+            [8] => dashboard_view
+            [9] => exams_add
+            [10] => exams_delete
+            [11] => exams_edit
+            [12] => exams_list
+            [13] => exams_view
+            [14] => fees_assign
+            [15] => fees_edit
+            [16] => fees_list
+            [17] => fees_view
+            [18] => fee_structures_add
+            [19] => fee_structures_list
+            [20] => fee_types_add
+            [21] => fee_types_list
+            [22] => grades_delete
+            [23] => grades_edit
+            [24] => grades_list
+            [25] => grades_mark
+            [26] => notifications_create
+            [27] => notifications_delete
+            [28] => notifications_list
+            [29] => notifications_view
+            [30] => payments_list
+            [31] => payments_record
+            [32] => roles_add
+            [33] => roles_delete
+            [34] => roles_edit
+            [35] => roles_list
+            [36] => settings_grading_scale
+            [37] => settings_school_info
+            [38] => students_add
+            [39] => students_delete
+            [40] => students_edit
+            [41] => students_list
+            [42] => students_view
+            [43] => subjects_add
+            [44] => subjects_delete
+            [45] => subjects_edit
+            [46] => subjects_list
+            [47] => users_add
+            [48] => users_delete
+            [49] => users_edit
+            [50] => users_list
+        )
+
+    [last_role_id] => 1
+    [csrf_token] => 3220f75ee757e5e810e8cb03f87dcf0e92a2435e6675fda0bbb6e916fe929a7f
+)
+
+[2025-08-17 16:00:20] Database connection verified
+[2025-08-19 08:53:21] === New User Creation Started ===
+[2025-08-19 08:53:21] POST data received:
+Array
+(
+    [csrf_token] => bfa00f3d636d9377887242acd2ce2fda0640ab020abc2c4aca244e1efda42e35
+    [username] => Rosi Teacher
+    [email] => rosi@gmail.com
+    [password] => rosi123
+    [confirm_password] => rosi123
+    [role] => teacher
+)
+
+[2025-08-19 08:53:21] Session state:
+Array
+(
+    [user_id] => 2
+    [role_id] => 1
+    [role_name] => admin
+    [username] => admin
+    [user_permissions] => Array
+        (
+            [0] => attendance_delete
+            [1] => attendance_list
+            [2] => attendance_mark
+            [3] => attendance_report
+            [4] => courses_add
+            [5] => courses_delete
+            [6] => courses_edit
+            [7] => courses_list
+            [8] => dashboard_view
+            [9] => exams_add
+            [10] => exams_delete
+            [11] => exams_edit
+            [12] => exams_list
+            [13] => exams_view
+            [14] => fees_assign
+            [15] => fees_edit
+            [16] => fees_list
+            [17] => fees_view
+            [18] => fee_structures_add
+            [19] => fee_structures_list
+            [20] => fee_types_add
+            [21] => fee_types_list
+            [22] => grades_delete
+            [23] => grades_edit
+            [24] => grades_list
+            [25] => grades_mark
+            [26] => notifications_create
+            [27] => notifications_delete
+            [28] => notifications_list
+            [29] => notifications_view
+            [30] => payments_list
+            [31] => payments_record
+            [32] => roles_add
+            [33] => roles_delete
+            [34] => roles_edit
+            [35] => roles_list
+            [36] => settings_grading_scale
+            [37] => settings_school_info
+            [38] => students_add
+            [39] => students_delete
+            [40] => students_edit
+            [41] => students_list
+            [42] => students_view
+            [43] => subjects_add
+            [44] => subjects_delete
+            [45] => subjects_edit
+            [46] => subjects_list
+            [47] => users_add
+            [48] => users_delete
+            [49] => users_edit
+            [50] => users_list
+        )
+
+    [last_role_id] => 1
+    [csrf_token] => bfa00f3d636d9377887242acd2ce2fda0640ab020abc2c4aca244e1efda42e35
+)
+
+[2025-08-19 08:53:21] Database connection verified
+[2025-08-19 08:58:17] === New User Creation Started ===
+[2025-08-19 08:58:17] POST data received:
+Array
+(
+    [csrf_token] => bfa00f3d636d9377887242acd2ce2fda0640ab020abc2c4aca244e1efda42e35
+    [username] => teacher
+    [email] => sudda@gmail.com
+    [password] => 778899
+    [confirm_password] => 778899
+    [role] => teacher
+)
+
+[2025-08-19 08:58:17] Session state:
+Array
+(
+    [user_id] => 2
+    [role_id] => 1
+    [role_name] => admin
+    [username] => admin
+    [user_permissions] => Array
+        (
+            [0] => attendance_delete
+            [1] => attendance_list
+            [2] => attendance_mark
+            [3] => attendance_report
+            [4] => courses_add
+            [5] => courses_delete
+            [6] => courses_edit
+            [7] => courses_list
+            [8] => dashboard_view
+            [9] => exams_add
+            [10] => exams_delete
+            [11] => exams_edit
+            [12] => exams_list
+            [13] => exams_view
+            [14] => fees_assign
+            [15] => fees_edit
+            [16] => fees_list
+            [17] => fees_view
+            [18] => fee_structures_add
+            [19] => fee_structures_list
+            [20] => fee_types_add
+            [21] => fee_types_list
+            [22] => grades_delete
+            [23] => grades_edit
+            [24] => grades_list
+            [25] => grades_mark
+            [26] => notifications_create
+            [27] => notifications_delete
+            [28] => notifications_list
+            [29] => notifications_view
+            [30] => payments_list
+            [31] => payments_record
+            [32] => roles_add
+            [33] => roles_delete
+            [34] => roles_edit
+            [35] => roles_list
+            [36] => settings_grading_scale
+            [37] => settings_school_info
+            [38] => students_add
+            [39] => students_delete
+            [40] => students_edit
+            [41] => students_list
+            [42] => students_view
+            [43] => subjects_add
+            [44] => subjects_delete
+            [45] => subjects_edit
+            [46] => subjects_list
+            [47] => users_add
+            [48] => users_delete
+            [49] => users_edit
+            [50] => users_list
+        )
+
+    [last_role_id] => 1
+    [csrf_token] => bfa00f3d636d9377887242acd2ce2fda0640ab020abc2c4aca244e1efda42e35
+)
+
+[2025-08-19 08:58:17] Database connection verified
+[2025-08-20 07:39:00] === New User Creation Started ===
+[2025-08-20 07:39:00] POST data received:
+Array
+(
+    [csrf_token] => 19c00c4f9388c8196cd386a488ea8c2658ab2a248785e33b4806c692df711f77
+    [username] => Madhu Teacher
+    [email] => maduteacher@gmail.com
+    [password] => 778899
+    [confirm_password] => 778899
+    [role] => teacher
+)
+
+[2025-08-20 07:39:00] Session state:
+Array
+(
+    [user_id] => 2
+    [role_id] => 1
+    [role_name] => admin
+    [username] => Admin
+    [last_activity] => 1755668281
+    [user_permissions] => Array
+        (
+            [0] => attendance_delete
+            [1] => attendance_list
+            [2] => attendance_mark
+            [3] => attendance_report
+            [4] => attendance_view
+            [5] => courses_add
+            [6] => courses_delete
+            [7] => courses_edit
+            [8] => courses_list
+            [9] => dashboard_view
+            [10] => exams_add
+            [11] => exams_delete
+            [12] => exams_edit
+            [13] => exams_list
+            [14] => exams_view
+            [15] => fees_assign
+            [16] => fees_edit
+            [17] => fees_list
+            [18] => fees_view
+            [19] => fee_structures_add
+            [20] => fee_structures_list
+            [21] => fee_types_add
+            [22] => fee_types_list
+            [23] => grades_delete
+            [24] => grades_edit
+            [25] => grades_list
+            [26] => grades_mark
+            [27] => grades_view
+            [28] => notifications_create
+            [29] => notifications_delete
+            [30] => notifications_list
+            [31] => notifications_view
+            [32] => payments_list
+            [33] => payments_record
+            [34] => profile_view
+            [35] => roles_add
+            [36] => roles_delete
+            [37] => roles_edit
+            [38] => roles_list
+            [39] => settings_grading_scale
+            [40] => settings_school_info
+            [41] => students_add
+            [42] => students_delete
+            [43] => students_edit
+            [44] => students_list
+            [45] => students_view
+            [46] => subjects_add
+            [47] => subjects_delete
+            [48] => subjects_edit
+            [49] => subjects_list
+            [50] => users_add
+            [51] => users_delete
+            [52] => users_edit
+            [53] => users_list
+        )
+
+    [last_role_id] => 1
+    [last_permission_check] => 1755668281
+    [csrf_token] => 19c00c4f9388c8196cd386a488ea8c2658ab2a248785e33b4806c692df711f77
+)
+
+[2025-08-20 07:39:00] Database connection verified
+[2025-08-21 08:02:06] === New User Creation Started ===
+[2025-08-21 08:02:06] POST data received:
+Array
+(
+    [csrf_token] => a6ecf6220f5b6359858ca18bee09fb17911e9d5936ad10836e336732a12774d4
+    [username] => maheshika
+    [email] => maheshika@gmail.com
+    [password] => 778899
+    [confirm_password] => 778899
+    [role] => teacher
+)
+
+[2025-08-21 08:02:06] Session state:
+Array
+(
+    [user_id] => 2
+    [role_id] => 1
+    [role_name] => admin
+    [username] => Admin
+    [last_activity] => 1755756067
+    [user_permissions] => Array
+        (
+            [0] => attendance_delete
+            [1] => attendance_list
+            [2] => attendance_mark
+            [3] => attendance_report
+            [4] => attendance_view
+            [5] => courses_add
+            [6] => courses_delete
+            [7] => courses_edit
+            [8] => courses_list
+            [9] => dashboard_view
+            [10] => exams_add
+            [11] => exams_delete
+            [12] => exams_edit
+            [13] => exams_list
+            [14] => exams_view
+            [15] => fees_assign
+            [16] => fees_edit
+            [17] => fees_list
+            [18] => fees_view
+            [19] => fee_structures_add
+            [20] => fee_structures_list
+            [21] => fee_types_add
+            [22] => fee_types_list
+            [23] => grades_delete
+            [24] => grades_edit
+            [25] => grades_list
+            [26] => grades_mark
+            [27] => grades_view
+            [28] => notifications_create
+            [29] => notifications_delete
+            [30] => notifications_list
+            [31] => notifications_view
+            [32] => payments_list
+            [33] => payments_record
+            [34] => profile_view
+            [35] => roles_add
+            [36] => roles_delete
+            [37] => roles_edit
+            [38] => roles_list
+            [39] => settings_grading_scale
+            [40] => settings_school_info
+            [41] => students_add
+            [42] => students_delete
+            [43] => students_edit
+            [44] => students_list
+            [45] => students_view
+            [46] => subjects_add
+            [47] => subjects_delete
+            [48] => subjects_edit
+            [49] => subjects_list
+            [50] => users_add
+            [51] => users_delete
+            [52] => users_edit
+            [53] => users_list
+        )
+
+    [last_role_id] => 1
+    [last_permission_check] => 1755756067
+    [csrf_token] => a6ecf6220f5b6359858ca18bee09fb17911e9d5936ad10836e336732a12774d4
+)
+
+[2025-08-21 08:02:06] Database connection verified
+[2025-08-21 08:06:54] === New User Creation Started ===
+[2025-08-21 08:06:54] POST data received:
+Array
+(
+    [csrf_token] => a6ecf6220f5b6359858ca18bee09fb17911e9d5936ad10836e336732a12774d4
+    [username] => chamindu
+    [email] => chamidukawi@gmail.com
+    [password] => 778899
+    [confirm_password] => 778899
+    [role] => teacher
+)
+
+[2025-08-21 08:06:54] Session state:
+Array
+(
+    [user_id] => 2
+    [role_id] => 1
+    [role_name] => admin
+    [username] => Admin
+    [last_activity] => 1755756392
+    [user_permissions] => Array
+        (
+            [0] => attendance_delete
+            [1] => attendance_list
+            [2] => attendance_mark
+            [3] => attendance_report
+            [4] => attendance_view
+            [5] => courses_add
+            [6] => courses_delete
+            [7] => courses_edit
+            [8] => courses_list
+            [9] => dashboard_view
+            [10] => exams_add
+            [11] => exams_delete
+            [12] => exams_edit
+            [13] => exams_list
+            [14] => exams_view
+            [15] => fees_assign
+            [16] => fees_edit
+            [17] => fees_list
+            [18] => fees_view
+            [19] => fee_structures_add
+            [20] => fee_structures_list
+            [21] => fee_types_add
+            [22] => fee_types_list
+            [23] => grades_delete
+            [24] => grades_edit
+            [25] => grades_list
+            [26] => grades_mark
+            [27] => grades_view
+            [28] => notifications_create
+            [29] => notifications_delete
+            [30] => notifications_list
+            [31] => notifications_view
+            [32] => payments_list
+            [33] => payments_record
+            [34] => profile_view
+            [35] => roles_add
+            [36] => roles_delete
+            [37] => roles_edit
+            [38] => roles_list
+            [39] => settings_grading_scale
+            [40] => settings_school_info
+            [41] => students_add
+            [42] => students_delete
+            [43] => students_edit
+            [44] => students_list
+            [45] => students_view
+            [46] => subjects_add
+            [47] => subjects_delete
+            [48] => subjects_edit
+            [49] => subjects_list
+            [50] => users_add
+            [51] => users_delete
+            [52] => users_edit
+            [53] => users_list
+        )
+
+    [last_role_id] => 1
+    [last_permission_check] => 1755756392
+    [csrf_token] => a6ecf6220f5b6359858ca18bee09fb17911e9d5936ad10836e336732a12774d4
+)
+
+[2025-08-21 08:06:54] Database connection verified
+[2025-08-21 08:13:24] === New User Creation Started ===
+[2025-08-21 08:13:24] POST data received:
+Array
+(
+    [csrf_token] => a6ecf6220f5b6359858ca18bee09fb17911e9d5936ad10836e336732a12774d4
+    [username] => cha
+    [email] => chamidukawi@gmail.com
+    [password] => 778899
+    [confirm_password] => 778899
+    [role] => teacher
+)
+
+[2025-08-21 08:13:24] Session state:
+Array
+(
+    [user_id] => 2
+    [role_id] => 1
+    [role_name] => admin
+    [username] => Admin
+    [last_activity] => 1755756786
+    [user_permissions] => Array
+        (
+            [0] => attendance_delete
+            [1] => attendance_list
+            [2] => attendance_mark
+            [3] => attendance_report
+            [4] => attendance_view
+            [5] => courses_add
+            [6] => courses_delete
+            [7] => courses_edit
+            [8] => courses_list
+            [9] => dashboard_view
+            [10] => exams_add
+            [11] => exams_delete
+            [12] => exams_edit
+            [13] => exams_list
+            [14] => exams_view
+            [15] => fees_assign
+            [16] => fees_edit
+            [17] => fees_list
+            [18] => fees_view
+            [19] => fee_structures_add
+            [20] => fee_structures_list
+            [21] => fee_types_add
+            [22] => fee_types_list
+            [23] => grades_delete
+            [24] => grades_edit
+            [25] => grades_list
+            [26] => grades_mark
+            [27] => grades_view
+            [28] => notifications_create
+            [29] => notifications_delete
+            [30] => notifications_list
+            [31] => notifications_view
+            [32] => payments_list
+            [33] => payments_record
+            [34] => profile_view
+            [35] => roles_add
+            [36] => roles_delete
+            [37] => roles_edit
+            [38] => roles_list
+            [39] => settings_grading_scale
+            [40] => settings_school_info
+            [41] => students_add
+            [42] => students_delete
+            [43] => students_edit
+            [44] => students_list
+            [45] => students_view
+            [46] => subjects_add
+            [47] => subjects_delete
+            [48] => subjects_edit
+            [49] => subjects_list
+            [50] => users_add
+            [51] => users_delete
+            [52] => users_edit
+            [53] => users_list
+        )
+
+    [last_role_id] => 1
+    [last_permission_check] => 1755756786
+    [csrf_token] => a6ecf6220f5b6359858ca18bee09fb17911e9d5936ad10836e336732a12774d4
+)
+
+[2025-08-21 08:13:24] Database connection verified
+[2025-08-21 08:16:31] === New User Creation Started ===
+[2025-08-21 08:16:31] POST data received:
+Array
+(
+    [csrf_token] => a6ecf6220f5b6359858ca18bee09fb17911e9d5936ad10836e336732a12774d4
+    [username] => dfv
+    [email] => chamidukawi@gmail.com
+    [password] => 778899
+    [confirm_password] => 778899
+    [role] => teacher
+)
+
+[2025-08-21 08:16:31] Session state:
+Array
+(
+    [user_id] => 2
+    [role_id] => 1
+    [role_name] => admin
+    [username] => Admin
+    [last_activity] => 1755756976
+    [user_permissions] => Array
+        (
+            [0] => attendance_delete
+            [1] => attendance_list
+            [2] => attendance_mark
+            [3] => attendance_report
+            [4] => attendance_view
+            [5] => courses_add
+            [6] => courses_delete
+            [7] => courses_edit
+            [8] => courses_list
+            [9] => dashboard_view
+            [10] => exams_add
+            [11] => exams_delete
+            [12] => exams_edit
+            [13] => exams_list
+            [14] => exams_view
+            [15] => fees_assign
+            [16] => fees_edit
+            [17] => fees_list
+            [18] => fees_view
+            [19] => fee_structures_add
+            [20] => fee_structures_list
+            [21] => fee_types_add
+            [22] => fee_types_list
+            [23] => grades_delete
+            [24] => grades_edit
+            [25] => grades_list
+            [26] => grades_mark
+            [27] => grades_view
+            [28] => notifications_create
+            [29] => notifications_delete
+            [30] => notifications_list
+            [31] => notifications_view
+            [32] => payments_list
+            [33] => payments_record
+            [34] => profile_view
+            [35] => roles_add
+            [36] => roles_delete
+            [37] => roles_edit
+            [38] => roles_list
+            [39] => settings_grading_scale
+            [40] => settings_school_info
+            [41] => students_add
+            [42] => students_delete
+            [43] => students_edit
+            [44] => students_list
+            [45] => students_view
+            [46] => subjects_add
+            [47] => subjects_delete
+            [48] => subjects_edit
+            [49] => subjects_list
+            [50] => users_add
+            [51] => users_delete
+            [52] => users_edit
+            [53] => users_list
+        )
+
+    [last_role_id] => 1
+    [last_permission_check] => 1755756976
+    [csrf_token] => a6ecf6220f5b6359858ca18bee09fb17911e9d5936ad10836e336732a12774d4
+)
+
+[2025-08-21 08:16:31] Database connection verified
+[2025-08-21 08:18:53] === New User Creation Started ===
+[2025-08-21 08:18:53] POST data received:
+Array
+(
+    [csrf_token] => a6ecf6220f5b6359858ca18bee09fb17911e9d5936ad10836e336732a12774d4
+    [username] => maheshika
+    [email] => maheshika@gmail.com
+    [password] => 778899
+    [confirm_password] => 778899
+    [role] => teacher
+)
+
+[2025-08-21 08:18:53] Session state:
+Array
+(
+    [user_id] => 2
+    [role_id] => 1
+    [role_name] => admin
+    [username] => Admin
+    [last_activity] => 1755757111
+    [user_permissions] => Array
+        (
+            [0] => attendance_delete
+            [1] => attendance_list
+            [2] => attendance_mark
+            [3] => attendance_report
+            [4] => attendance_view
+            [5] => courses_add
+            [6] => courses_delete
+            [7] => courses_edit
+            [8] => courses_list
+            [9] => dashboard_view
+            [10] => exams_add
+            [11] => exams_delete
+            [12] => exams_edit
+            [13] => exams_list
+            [14] => exams_view
+            [15] => fees_assign
+            [16] => fees_edit
+            [17] => fees_list
+            [18] => fees_view
+            [19] => fee_structures_add
+            [20] => fee_structures_list
+            [21] => fee_types_add
+            [22] => fee_types_list
+            [23] => grades_delete
+            [24] => grades_edit
+            [25] => grades_list
+            [26] => grades_mark
+            [27] => grades_view
+            [28] => notifications_create
+            [29] => notifications_delete
+            [30] => notifications_list
+            [31] => notifications_view
+            [32] => payments_list
+            [33] => payments_record
+            [34] => profile_view
+            [35] => roles_add
+            [36] => roles_delete
+            [37] => roles_edit
+            [38] => roles_list
+            [39] => settings_grading_scale
+            [40] => settings_school_info
+            [41] => students_add
+            [42] => students_delete
+            [43] => students_edit
+            [44] => students_list
+            [45] => students_view
+            [46] => subjects_add
+            [47] => subjects_delete
+            [48] => subjects_edit
+            [49] => subjects_list
+            [50] => users_add
+            [51] => users_delete
+            [52] => users_edit
+            [53] => users_list
+        )
+
+    [last_role_id] => 1
+    [last_permission_check] => 1755757111
+    [csrf_token] => a6ecf6220f5b6359858ca18bee09fb17911e9d5936ad10836e336732a12774d4
+)
+
+[2025-08-21 08:18:53] Database connection verified
+[2025-08-21 11:04:34] === New User Creation Started ===
+[2025-08-21 11:04:34] POST data received:
+Array
+(
+    [csrf_token] => a6ecf6220f5b6359858ca18bee09fb17911e9d5936ad10836e336732a12774d4
+    [username] => maheshika
+    [email] => maheshika@gmail.com
+    [password] => 778899
+    [confirm_password] => 778899
+    [role] => teacher
+)
+
+[2025-08-21 11:04:34] Session state:
+Array
+(
+    [user_id] => 2
+    [role_id] => 1
+    [role_name] => admin
+    [username] => Admin
+    [last_activity] => 1755767045
+    [user_permissions] => Array
+        (
+            [0] => attendance_delete
+            [1] => attendance_list
+            [2] => attendance_mark
+            [3] => attendance_report
+            [4] => attendance_view
+            [5] => courses_add
+            [6] => courses_delete
+            [7] => courses_edit
+            [8] => courses_list
+            [9] => dashboard_view
+            [10] => exams_add
+            [11] => exams_delete
+            [12] => exams_edit
+            [13] => exams_list
+            [14] => exams_view
+            [15] => fees_assign
+            [16] => fees_edit
+            [17] => fees_list
+            [18] => fees_view
+            [19] => fee_structures_add
+            [20] => fee_structures_list
+            [21] => fee_types_add
+            [22] => fee_types_list
+            [23] => grades_delete
+            [24] => grades_edit
+            [25] => grades_list
+            [26] => grades_mark
+            [27] => grades_view
+            [28] => notifications_create
+            [29] => notifications_delete
+            [30] => notifications_list
+            [31] => notifications_view
+            [32] => payments_list
+            [33] => payments_record
+            [34] => profile_view
+            [35] => roles_add
+            [36] => roles_delete
+            [37] => roles_edit
+            [38] => roles_list
+            [39] => settings_grading_scale
+            [40] => settings_school_info
+            [41] => students_add
+            [42] => students_delete
+            [43] => students_edit
+            [44] => students_list
+            [45] => students_view
+            [46] => subjects_add
+            [47] => subjects_delete
+            [48] => subjects_edit
+            [49] => subjects_list
+            [50] => users_add
+            [51] => users_delete
+            [52] => users_edit
+            [53] => users_list
+        )
+
+    [last_role_id] => 1
+    [last_permission_check] => 1755767045
+    [csrf_token] => a6ecf6220f5b6359858ca18bee09fb17911e9d5936ad10836e336732a12774d4
+)
+
+[2025-08-21 11:04:34] Database connection verified
+[2025-08-22 03:31:13] === New User Creation Started ===
+[2025-08-22 03:31:13] POST data received:
+Array
+(
+    [csrf_token] => 67e919b4518111dc48419382adc8701ae28f8547845237a94191eb29973befa6
+    [username] => john
+    [email] => john@gmail.com
+    [password] => 778899
+    [confirm_password] => 778899
+    [role] => teacher
+)
+
+[2025-08-22 03:31:13] Session state:
+Array
+(
+    [user_id] => 2
+    [role_id] => 1
+    [role_name] => admin
+    [username] => Admin
+    [last_activity] => 1755826273
+    [user_permissions] => Array
+        (
+            [0] => attendance_delete
+            [1] => attendance_list
+            [2] => attendance_mark
+            [3] => attendance_report
+            [4] => attendance_view
+            [5] => courses_add
+            [6] => courses_delete
+            [7] => courses_edit
+            [8] => courses_list
+            [9] => dashboard_view
+            [10] => exams_add
+            [11] => exams_delete
+            [12] => exams_edit
+            [13] => exams_list
+            [14] => exams_view
+            [15] => fees_assign
+            [16] => fees_edit
+            [17] => fees_list
+            [18] => fees_view
+            [19] => fee_structures_add
+            [20] => fee_structures_list
+            [21] => fee_types_add
+            [22] => fee_types_list
+            [23] => grades_delete
+            [24] => grades_edit
+            [25] => grades_list
+            [26] => grades_mark
+            [27] => grades_view
+            [28] => notifications_create
+            [29] => notifications_delete
+            [30] => notifications_list
+            [31] => notifications_view
+            [32] => payments_list
+            [33] => payments_record
+            [34] => profile_view
+            [35] => roles_add
+            [36] => roles_delete
+            [37] => roles_edit
+            [38] => roles_list
+            [39] => settings_grading_scale
+            [40] => settings_school_info
+            [41] => students_add
+            [42] => students_delete
+            [43] => students_edit
+            [44] => students_list
+            [45] => students_view
+            [46] => subjects_add
+            [47] => subjects_delete
+            [48] => subjects_edit
+            [49] => subjects_list
+            [50] => users_add
+            [51] => users_delete
+            [52] => users_edit
+            [53] => users_list
+        )
+
+    [last_role_id] => 1
+    [last_permission_check] => 1755826273
+    [csrf_token] => 67e919b4518111dc48419382adc8701ae28f8547845237a94191eb29973befa6
+)
+
+[2025-08-22 03:31:13] Database connection verified
+[2025-08-22 03:39:26] === New User Creation Started ===
+[2025-08-22 03:39:26] POST data received:
+Array
+(
+    [csrf_token] => 67e919b4518111dc48419382adc8701ae28f8547845237a94191eb29973befa6
+    [username] => john
+    [email] => jhon@gmail.com
+    [password] => 778899
+    [confirm_password] => 778899
+    [role] => teacher
+)
+
+[2025-08-22 03:39:26] Session state:
+Array
+(
+    [user_id] => 2
+    [role_id] => 1
+    [role_name] => admin
+    [username] => Admin
+    [last_activity] => 1755826731
+    [user_permissions] => Array
+        (
+            [0] => attendance_delete
+            [1] => attendance_list
+            [2] => attendance_mark
+            [3] => attendance_report
+            [4] => attendance_view
+            [5] => courses_add
+            [6] => courses_delete
+            [7] => courses_edit
+            [8] => courses_list
+            [9] => dashboard_view
+            [10] => exams_add
+            [11] => exams_delete
+            [12] => exams_edit
+            [13] => exams_list
+            [14] => exams_view
+            [15] => fees_assign
+            [16] => fees_edit
+            [17] => fees_list
+            [18] => fees_view
+            [19] => fee_structures_add
+            [20] => fee_structures_list
+            [21] => fee_types_add
+            [22] => fee_types_list
+            [23] => grades_delete
+            [24] => grades_edit
+            [25] => grades_list
+            [26] => grades_mark
+            [27] => grades_view
+            [28] => notifications_create
+            [29] => notifications_delete
+            [30] => notifications_list
+            [31] => notifications_view
+            [32] => payments_list
+            [33] => payments_record
+            [34] => profile_view
+            [35] => roles_add
+            [36] => roles_delete
+            [37] => roles_edit
+            [38] => roles_list
+            [39] => settings_grading_scale
+            [40] => settings_school_info
+            [41] => students_add
+            [42] => students_delete
+            [43] => students_edit
+            [44] => students_list
+            [45] => students_view
+            [46] => subjects_add
+            [47] => subjects_delete
+            [48] => subjects_edit
+            [49] => subjects_list
+            [50] => users_add
+            [51] => users_delete
+            [52] => users_edit
+            [53] => users_list
+        )
+
+    [last_role_id] => 1
+    [last_permission_check] => 1755826731
+    [csrf_token] => 67e919b4518111dc48419382adc8701ae28f8547845237a94191eb29973befa6
+)
+
+[2025-08-22 03:39:26] Database connection verified
+[2025-08-22 03:47:05] === New User Creation Started ===
+[2025-08-22 03:47:05] POST data received:
+Array
+(
+    [csrf_token] => 67e919b4518111dc48419382adc8701ae28f8547845237a94191eb29973befa6
+    [username] => manager
+    [email] => manager@gmail.com
+    [password] => 778899
+    [confirm_password] => 778899
+    [role] => manager
+)
+
+[2025-08-22 03:47:05] Session state:
+Array
+(
+    [user_id] => 2
+    [role_id] => 1
+    [role_name] => admin
+    [username] => Admin
+    [last_activity] => 1755827195
+    [user_permissions] => Array
+        (
+            [0] => attendance_delete
+            [1] => attendance_list
+            [2] => attendance_mark
+            [3] => attendance_report
+            [4] => attendance_view
+            [5] => courses_add
+            [6] => courses_delete
+            [7] => courses_edit
+            [8] => courses_list
+            [9] => dashboard_view
+            [10] => exams_add
+            [11] => exams_delete
+            [12] => exams_edit
+            [13] => exams_list
+            [14] => exams_view
+            [15] => fees_assign
+            [16] => fees_edit
+            [17] => fees_list
+            [18] => fees_view
+            [19] => fee_structures_add
+            [20] => fee_structures_list
+            [21] => fee_types_add
+            [22] => fee_types_list
+            [23] => grades_delete
+            [24] => grades_edit
+            [25] => grades_list
+            [26] => grades_mark
+            [27] => grades_view
+            [28] => notifications_create
+            [29] => notifications_delete
+            [30] => notifications_list
+            [31] => notifications_view
+            [32] => payments_list
+            [33] => payments_record
+            [34] => profile_view
+            [35] => roles_add
+            [36] => roles_delete
+            [37] => roles_edit
+            [38] => roles_list
+            [39] => settings_grading_scale
+            [40] => settings_school_info
+            [41] => students_add
+            [42] => students_delete
+            [43] => students_edit
+            [44] => students_list
+            [45] => students_view
+            [46] => subjects_add
+            [47] => subjects_delete
+            [48] => subjects_edit
+            [49] => subjects_list
+            [50] => users_add
+            [51] => users_delete
+            [52] => users_edit
+            [53] => users_list
+        )
+
+    [last_role_id] => 1
+    [last_permission_check] => 1755827195
+    [csrf_token] => 67e919b4518111dc48419382adc8701ae28f8547845237a94191eb29973befa6
+)
+
+[2025-08-22 03:47:05] Database connection verified

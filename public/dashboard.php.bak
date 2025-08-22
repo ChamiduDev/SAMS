@@ -1,0 +1,708 @@
+<?php
+// public/dashboard.php
+
+// The header includes the auth_check, so no need to require it again.
+require_once 'includes/header.php';
+
+// The header now requires utils, so we can get the PDO connection.
+$pdo = get_pdo_connection();
+
+// Get user role
+$user_role = '';
+$stmt = $pdo->prepare("SELECT r.name FROM roles r JOIN users u ON r.id = u.role_id WHERE u.id = ?");
+$stmt->execute([$_SESSION['user_id']]);
+$user_role = $stmt->fetchColumn();
+
+// Initialize variables
+$student = null;
+$exam_results = [];
+$pending_exams = [];
+$payments = [];
+$notifications = [];
+$error = null;
+
+// Include notifications functions
+require_once __DIR__ . '/notifications/get_notifications.php';
+
+if ($user_role === 'student') {
+    // Fetch student information
+    try {
+        // Get student details with courses and subjects
+        $stmt = $pdo->prepare("
+            SELECT s.*, u.email, u.username,
+                   GROUP_CONCAT(DISTINCT c.name) as course_names,
+                   GROUP_CONCAT(DISTINCT sub.name) as subject_names,
+                   COUNT(DISTINCT c.id) as course_count,
+                   COUNT(DISTINCT sub.id) as subject_count
+            FROM students s
+            JOIN users u ON s.user_id = u.id
+            LEFT JOIN student_course_subjects scs ON s.id = scs.student_id
+            LEFT JOIN courses c ON scs.course_id = c.id
+            LEFT JOIN subjects sub ON scs.subject_id = sub.id
+            WHERE s.user_id = ? AND s.status = 'active'
+            GROUP BY s.id
+        ");
+        $stmt->execute([$_SESSION['user_id']]);
+        $student = $stmt->fetch(PDO::FETCH_ASSOC);
+        
+        if (!$student) {
+            throw new Exception('No active student record found for this user.');
+        }
+
+        // Fetch exam results
+        $stmt = $pdo->prepare("
+            SELECT e.title as exam_name, eg.obtained_marks, e.total_marks, 
+                   e.exam_date, s.name as subject_name, c.name as course_name
+            FROM exam_grades eg
+            JOIN exams e ON eg.exam_id = e.id
+            JOIN subjects s ON e.subject_id = s.id
+            JOIN courses c ON s.course_id = c.id
+            WHERE eg.student_id = ?
+            ORDER BY e.exam_date DESC
+        ");
+        $stmt->execute([$student['id']]);
+        $exam_results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+        // Fetch pending exams
+        $stmt = $pdo->prepare("
+            SELECT e.title, e.exam_date, e.total_marks, e.duration,
+                   s.name as subject_name, c.name as course_name
+            FROM exams e
+            JOIN subjects s ON e.subject_id = s.id
+            JOIN courses c ON s.course_id = c.id
+            WHERE e.subject_id IN (
+                SELECT DISTINCT scs.subject_id 
+                FROM student_course_subjects scs 
+                WHERE scs.student_id = ?
+            )
+            AND e.exam_date >= CURDATE()
+            AND NOT EXISTS (
+                SELECT 1 FROM exam_grades eg 
+                WHERE eg.exam_id = e.id 
+                AND eg.student_id = ?
+            )
+            ORDER BY e.exam_date ASC
+        ");
+        $stmt->execute([$student['id'], $student['id']]);
+        $pending_exams = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+        // Fetch payment details
+        $stmt = $pdo->prepare("
+            SELECT p.amount, p.payment_date, p.status, 
+                   ft.name as fee_type, fs.description,
+                   fs.total_amount as fee_structure_amount
+            FROM payments p
+            JOIN fee_types ft ON p.fee_type_id = ft.id
+            LEFT JOIN fee_structures fs ON ft.id = fs.fee_type_id
+            WHERE p.student_id = ?
+            ORDER BY p.payment_date DESC
+        ");
+        $stmt->execute([$student['id']]);
+        $payments = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+        // Include notifications functions
+        require_once __DIR__ . '/notifications/get_notifications.php';
+        
+        // Fetch notifications using the new function (limit to 5)
+        $notifications = get_user_notifications($pdo, $_SESSION['user_id'], $_SESSION['role_name'], 5);
+
+    } catch (PDOException $e) {
+        $error = "Could not fetch student data. Error: " . $e->getMessage();
+    }
+} else {
+    // Regular dashboard data for other roles
+    try {
+        // Fetch Total Students
+        $stmt_students = $pdo->query("SELECT COUNT(id) FROM students");
+        $total_students = $stmt_students->fetchColumn();
+
+        // Fetch Total Teachers
+        $stmt_teachers = $pdo->prepare("SELECT COUNT(u.id) FROM users u JOIN roles r ON u.role_id = r.id WHERE r.name = ?");
+        $stmt_teachers->execute(['teacher']);
+        $total_teachers = $stmt_teachers->fetchColumn();
+
+        // Fetch Total Courses
+        $stmt_courses = $pdo->query("SELECT COUNT(id) FROM courses");
+        $total_courses = $stmt_courses->fetchColumn();
+
+        // Fetch Today's Attendance Percentage
+        $today = date("Y-m-d");
+        $stmt_att = $pdo->prepare("SELECT COUNT(id) as total, SUM(CASE WHEN status = 'present' THEN 1 ELSE 0 END) as present FROM attendance WHERE date = ?");
+        $stmt_att->execute([$today]);
+        $att_data = $stmt_att->fetch(PDO::FETCH_ASSOC);
+        $attendance_percentage = ($att_data['total'] > 0) ? round(($att_data['present'] / $att_data['total']) * 100) : 0;
+
+        // Include notifications functions
+        require_once 'notifications/get_notifications.php';
+        
+        // Fetch notifications using the new function (limit to 5)
+        $notifications = get_user_notifications($pdo, $_SESSION['user_id'], $_SESSION['role_name'], 5);
+
+    } catch (PDOException $e) {
+        // If there's a DB error, set KPIs to 0 and show an error message.
+        $total_students = $total_teachers = $total_courses = $attendance_percentage = 0;
+        $dashboard_error = "Could not fetch dashboard data. Error: " . $e->getMessage();
+    }
+} // Close the else block
+
+?>
+
+<?php require_once 'includes/sidebar.php'; // Include the sidebar ?>
+
+<!-- Page Content -->
+<div id="page-content-wrapper">
+    <div class="container-fluid px-4">
+        <?php if ($user_role === 'student' && isset($student)): ?>
+            <!-- Student Dashboard -->
+            <!-- Welcome Banner -->
+            <div class="card mb-4 border-0 shadow-sm bg-primary text-white">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <h3 class="mb-0">Welcome, <?php echo htmlspecialchars($student['first_name'] . ' ' . $student['last_name']); ?></h3>
+                            <p class="mb-0">Student ID: <?php echo htmlspecialchars($student['student_id']); ?></p>
+                            <p class="mb-0">Year: <?php echo htmlspecialchars($student['year']); ?></p>
+                        </div>
+                        <div class="text-end">
+                            <p class="mb-0"><?php echo (int)$student['course_count']; ?> Course(s)</p>
+                            <p class="mb-0"><?php echo (int)$student['subject_count']; ?> Subject(s)</p>
+                            <small class="text-white-50"><?php echo htmlspecialchars($student['course_names'] ?? 'No courses assigned'); ?></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats Cards -->
+            <!-- Attendance Overview -->
+            <div class="card border-0 shadow-sm mb-4">
+                <div class="card-header bg-white border-0">
+                    <h5 class="mb-0">Attendance Overview</h5>
+                </div>
+                <div class="card-body">
+                    <?php
+                    // Fetch attendance overview
+                    $stmt = $pdo->prepare("
+                        SELECT 
+                            s.name as subject_name,
+                            COUNT(*) as total_classes,
+                            SUM(CASE WHEN a.status = 'present' THEN 1 ELSE 0 END) as present_count,
+                            SUM(CASE WHEN a.status = 'absent' THEN 1 ELSE 0 END) as absent_count,
+                            SUM(CASE WHEN a.status = 'late' THEN 1 ELSE 0 END) as late_count
+                        FROM attendance a
+                        JOIN subjects s ON a.subject_id = s.id
+                        WHERE a.student_id = ?
+                        GROUP BY s.name
+                        ORDER BY s.name
+                    ");
+                    $stmt->execute([$student['id']]);
+                    $attendance_data = $stmt->fetchAll(PDO::FETCH_ASSOC);
+                    ?>
+                    
+                    <?php if (empty($attendance_data)): ?>
+                        <p class="text-muted">No attendance records available.</p>
+                    <?php else: ?>
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Subject</th>
+                                        <th>Total Classes</th>
+                                        <th>Present</th>
+                                        <th>Absent</th>
+                                        <th>Late</th>
+                                        <th>Attendance %</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <?php foreach ($attendance_data as $record): ?>
+                                        <?php 
+                                        $attendance_percentage = ($record['total_classes'] > 0) 
+                                            ? round((($record['present_count'] + $record['late_count']) / $record['total_classes']) * 100, 1)
+                                            : 0;
+                                        ?>
+                                        <tr>
+                                            <td><?php echo htmlspecialchars($record['subject_name']); ?></td>
+                                            <td><?php echo $record['total_classes']; ?></td>
+                                            <td><span class="text-success"><?php echo $record['present_count']; ?></span></td>
+                                            <td><span class="text-danger"><?php echo $record['absent_count']; ?></span></td>
+                                            <td><span class="text-warning"><?php echo $record['late_count']; ?></span></td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="progress flex-grow-1 me-2" style="height: 6px;">
+                                                        <div class="progress-bar bg-<?php echo $attendance_percentage >= 75 ? 'success' : ($attendance_percentage >= 60 ? 'warning' : 'danger'); ?>"
+                                                             style="width: <?php echo $attendance_percentage; ?>%">
+                                                        </div>
+                                                    </div>
+                                                    <span class="small"><?php echo $attendance_percentage; ?>%</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    <?php endforeach; ?>
+                                </tbody>
+                            </table>
+                        </div>
+                    <?php endif; ?>
+                </div>
+            </div>
+
+            <div class="row mb-4">
+                <div class="col-xl-3 col-md-6">
+                    <div class="card border-0 shadow-sm mb-4">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h6 class="text-muted">Courses & Subjects</h6>
+                                    <h3 class="mb-0"><?php echo (int)$student['subject_count']; ?></h3>
+                                    <small class="text-muted"><?php echo (int)$student['course_count']; ?> Course(s)</small>
+                                </div>
+                                <div class="rounded-circle bg-light p-3">
+                                    <i class="fas fa-book fa-2x text-primary"></i>
+                                </div>
+                            </div>
+                            <div class="mt-3">
+                                <div class="small fw-semibold mb-1">Enrolled Courses:</div>
+                                <?php
+                                $courses = explode(',', $student['course_names']);
+                                foreach ($courses as $course):
+                                ?>
+                                    <span class="badge bg-primary-subtle text-primary me-1 mb-1"><?php echo htmlspecialchars($course); ?></span>
+                                <?php endforeach; ?>
+                            </div>
+                            <div class="progress mt-2" style="height: 4px;">
+                                <div class="progress-bar" style="width: <?php echo ((int)$student['subject_count'] / 10) * 100; ?>%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6">
+                    <div class="card border-0 shadow-sm mb-4">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h6 class="text-muted">Exam Progress</h6>
+                                    <h3 class="mb-0"><?php echo count($exam_results); ?></h3>
+                                    <small class="text-muted"><?php echo count($pending_exams); ?> Upcoming</small>
+                                </div>
+                                <div class="rounded-circle bg-light p-3">
+                                    <i class="fas fa-graduation-cap fa-2x text-warning"></i>
+                                </div>
+                            </div>
+                            <div class="progress mt-2" style="height: 4px;">
+                                <div class="progress-bar bg-warning" style="width: <?php 
+                                    $total_exams = count($exam_results) + count($pending_exams);
+                                    echo $total_exams > 0 ? (count($exam_results) / $total_exams) * 100 : 0; 
+                                ?>%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6">
+                    <div class="card border-0 shadow-sm mb-4">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h6 class="text-muted">Average Score</h6>
+                                    <?php
+                                    $total_score = 0;
+                                    $exam_count = count($exam_results);
+                                    foreach ($exam_results as $result) {
+                                        $total_score += ($result['obtained_marks'] / $result['total_marks']) * 100;
+                                    }
+                                    $average_score = $exam_count > 0 ? round($total_score / $exam_count, 1) : 0;
+                                    ?>
+                                    <h3 class="mb-0"><?php echo $average_score; ?>%</h3>
+                                    <small class="text-muted"><?php echo $exam_count; ?> Exam(s)</small>
+                                </div>
+                                <div class="rounded-circle bg-light p-3">
+                                    <i class="fas fa-chart-line fa-2x text-info"></i>
+                                </div>
+                            </div>
+                            <div class="progress mt-2" style="height: 4px;">
+                                <div class="progress-bar bg-info" style="width: <?php echo $average_score; ?>%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6">
+                    <div class="card border-0 shadow-sm mb-4">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h6 class="text-muted">Payment Status</h6>
+                                    <?php
+                                    $total_paid = 0;
+                                    $total_due = 0;
+                                    foreach ($payments as $payment) {
+                                        if ($payment['status'] == 'completed') {
+                                            $total_paid += $payment['amount'];
+                                        }
+                                        $total_due += $payment['fee_structure_amount'];
+                                    }
+                                    $payment_percentage = $total_due > 0 ? round(($total_paid/$total_due) * 100) : 0;
+                                    ?>
+                                    <h3 class="mb-0"><?php echo $payment_percentage; ?>%</h3>
+                                    <small class="text-muted">Fees Paid</small>
+                                </div>
+                                <div class="rounded-circle bg-light p-3">
+                                    <i class="fas fa-money-bill fa-2x text-success"></i>
+                                </div>
+                            </div>
+                            <div class="progress mt-2" style="height: 4px;">
+                                <div class="progress-bar bg-success" style="width: <?php echo $payment_percentage; ?>%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Exam Results -->
+                <div class="col-lg-8">
+                    <div class="card border-0 shadow-sm mb-4">
+                        <div class="card-header bg-white border-0 d-flex justify-content-between align-items-center">
+                            <h5 class="mb-0">Recent Exam Results</h5>
+                            <a href="<?php echo BASE_URL; ?>public/exams/student_results.php" class="btn btn-sm btn-outline-primary">View All Results</a>
+                        </div>
+                        <div class="card-body">
+                            <?php if (empty($exam_results)): ?>
+                                <p class="text-muted">No exam results available</p>
+                            <?php else: ?>
+                                <?php 
+                                // Group exams by subject
+                                $exams_by_subject = [];
+                                foreach ($exam_results as $result) {
+                                    $subject_key = $result['subject_name'];
+                                    if (!isset($exams_by_subject[$subject_key])) {
+                                        $exams_by_subject[$subject_key] = [];
+                                    }
+                                    $exams_by_subject[$subject_key][] = $result;
+                                }
+                                ?>
+                                
+                                <div class="accordion" id="examResultsAccordion">
+                                    <?php foreach ($exams_by_subject as $subject => $results): ?>
+                                        <div class="accordion-item border-0 mb-3">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" 
+                                                        data-bs-target="#subject<?php echo md5($subject); ?>">
+                                                    <div class="d-flex justify-content-between align-items-center w-100 me-3">
+                                                        <strong><?php echo htmlspecialchars($subject); ?></strong>
+                                                        <?php
+                                                        $subject_total = 0;
+                                                        $subject_obtained = 0;
+                                                        foreach ($results as $result) {
+                                                            $subject_total += $result['total_marks'];
+                                                            $subject_obtained += $result['obtained_marks'];
+                                                        }
+                                                        $subject_percentage = $subject_total > 0 ? ($subject_obtained / $subject_total) * 100 : 0;
+                                                        ?>
+                                                        <span class="badge bg-<?php echo $subject_percentage >= 75 ? 'success' : ($subject_percentage >= 50 ? 'warning' : 'danger'); ?>">
+                                                            <?php echo number_format($subject_percentage, 1); ?>%
+                                                        </span>
+                                                    </div>
+                                                </button>
+                                            </h2>
+                                            <div id="subject<?php echo md5($subject); ?>" class="accordion-collapse collapse">
+                                                <div class="accordion-body px-0">
+                                                    <?php foreach ($results as $result): ?>
+                                                        <div class="mb-3">
+                                                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                                                <div>
+                                                                    <span class="fw-semibold"><?php echo htmlspecialchars($result['exam_name']); ?></span>
+                                                                    <small class="text-muted ms-2">(<?php echo date('M j, Y', strtotime($result['exam_date'])); ?>)</small>
+                                                                </div>
+                                                                <div>
+                                                                    <span class="badge bg-<?php echo ($result['obtained_marks']/$result['total_marks']*100) >= 75 ? 'success' : (($result['obtained_marks']/$result['total_marks']*100) >= 50 ? 'warning' : 'danger'); ?>">
+                                                                        <?php echo $result['obtained_marks']; ?>/<?php echo $result['total_marks']; ?>
+                                                                        (<?php echo number_format(($result['obtained_marks']/$result['total_marks']*100), 1); ?>%)
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="progress mt-1" style="height: 4px;">
+                                                                <div class="progress-bar" role="progressbar" 
+                                                                     style="width: <?php echo ($result['obtained_marks']/$result['total_marks']*100); ?>%" 
+                                                                     aria-valuenow="<?php echo ($result['obtained_marks']/$result['total_marks']*100); ?>" 
+                                                                     aria-valuemin="0" 
+                                                                     aria-valuemax="100"></div>
+                                                            </div>
+                                                        </div>
+                                                    <?php endforeach; ?>
+                                                    <!-- Subject Summary -->
+                                                    <div class="mt-3 pt-2 border-top">
+                                                        <div class="d-flex justify-content-between align-items-center">
+                                                            <span class="fw-semibold">Subject Total</span>
+                                                            <span class="badge bg-<?php echo $subject_percentage >= 75 ? 'success' : ($subject_percentage >= 50 ? 'warning' : 'danger'); ?>">
+                                                                <?php echo $subject_obtained; ?>/<?php echo $subject_total; ?>
+                                                                (<?php echo number_format($subject_percentage, 1); ?>%)
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <?php endforeach; ?>
+                                </div>
+                            <?php endif; ?>
+                            <?php endif; ?>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Notifications -->
+                <div class="col-lg-4">
+                    <div class="card border-0 shadow-sm mb-4">
+                        <div class="card-header bg-white border-0">
+                            <h5 class="mb-0">Recent Notifications</h5>
+                        </div>
+                        <div class="card-body">
+                            <?php if (empty($notifications)): ?>
+                                <p class="text-muted">No notifications available</p>
+                            <?php else: ?>
+                                <?php foreach ($notifications as $notification): ?>
+                                    <div class="notification-item mb-3">
+                                        <h6 class="mb-1"><?php echo htmlspecialchars($notification['title']); ?></h6>
+                                        <p class="mb-1 small"><?php echo htmlspecialchars($notification['message']); ?></p>
+                                        <small class="text-muted"><?php echo date('M j, Y', strtotime($notification['created_at'])); ?></small>
+                                    </div>
+                                <?php endforeach; ?>
+                            <?php endif; ?>
+                        </div>
+                    </div>
+
+                    <!-- Upcoming Exams -->
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-header bg-white border-0">
+                            <h5 class="mb-0">Upcoming Exams</h5>
+                        </div>
+                        <div class="card-body">
+                            <?php if (empty($pending_exams)): ?>
+                                <p class="text-muted">No upcoming exams</p>
+                            <?php else: ?>
+                                <?php foreach (array_slice($pending_exams, 0, 3) as $exam): ?>
+                                    <div class="d-flex align-items-center mb-3">
+                                        <div class="flex-shrink-0 me-3">
+                                            <div class="date-box text-center">
+                                                <span class="d-block text-muted small"><?php echo date('M', strtotime($exam['exam_date'])); ?></span>
+                                                <span class="d-block h4 mb-0"><?php echo date('d', strtotime($exam['exam_date'])); ?></span>
+                                            </div>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <h6 class="mb-1"><?php echo htmlspecialchars($exam['title']); ?></h6>
+                                            <p class="mb-0 small text-muted">
+                                                <span class="badge bg-primary-subtle text-primary me-2"><?php echo htmlspecialchars($exam['course_name']); ?></span>
+                                                <span><?php echo htmlspecialchars($exam['subject_name']); ?></span>
+                                            </p>
+                                            <p class="mb-0 small text-muted">
+                                                <i class="far fa-clock me-1"></i>Duration: <?php echo $exam['duration'] ?? 60; ?> mins
+                                            </p>
+                                        </div>
+                                    </div>
+                                <?php endforeach; ?>
+                            <?php endif; ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <?php endif; ?>
+    </div>
+</div>
+<!-- /#page-content-wrapper -->
+
+<?php require_once 'includes/footer.php'; ?>
+
+        <!-- KPI Cards -->
+        <div class="row g-4 mb-4">
+            <div class="col-sm-6 col-xl-3">
+                <div class="stat-card card border-0 shadow-sm">
+                    <div class="card-body">
+                        <div class="stat-icon bg-primary-dark rounded-3 p-3 mb-3">
+                            <i class="fas fa-user-graduate text-light fa-2x"></i>
+                        </div>
+                        <h3 class="stat-number mb-1"><?php echo number_format($total_students); ?></h3>
+                        <p class="stat-label text-muted mb-0">Total Students</p>
+                        <div class="progress mt-3" style="height: 4px;">
+                            <div class="progress-bar bg-primary" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-xl-3">
+                <div class="stat-card card border-0 shadow-sm">
+                    <div class="card-body">
+                        <div class="stat-icon bg-success-subtle rounded-3 p-3 mb-3">
+                            <i class="fas fa-chalkboard-teacher text-success fa-2x"></i>
+                        </div>
+                        <h3 class="stat-number mb-1"><?php echo number_format($total_teachers); ?></h3>
+                        <p class="stat-label text-muted mb-0">Total Teachers</p>
+                        <div class="progress mt-3" style="height: 4px;">
+                            <div class="progress-bar bg-success" style="width: 65%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-xl-3">
+                <div class="stat-card card border-0 shadow-sm">
+                    <div class="card-body">
+                        <div class="stat-icon bg-warning-subtle rounded-3 p-3 mb-3">
+                            <i class="fas fa-book-open text-warning fa-2x"></i>
+                        </div>
+                        <h3 class="stat-number mb-1"><?php echo number_format($total_courses); ?></h3>
+                        <p class="stat-label text-muted mb-0">Total Courses</p>
+                        <div class="progress mt-3" style="height: 4px;">
+                            <div class="progress-bar bg-warning" style="width: 85%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-xl-3">
+                <div class="stat-card card border-0 shadow-sm">
+                    <div class="card-body">
+                        <div class="stat-icon bg-info-subtle rounded-3 p-3 mb-3">
+                            <i class="fas fa-user-check text-info fa-2x"></i>
+                        </div>
+                        <h3 class="stat-number mb-1"><?php echo $attendance_percentage; ?>%</h3>
+                        <p class="stat-label text-muted mb-0">Today's Attendance</p>
+                        <div class="progress mt-3" style="height: 4px;">
+                            <div class="progress-bar bg-info" style="width: <?php echo $attendance_percentage; ?>%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quick Access & Recent Activities -->
+        <div class="row g-4 mb-4">
+            <!-- Quick Access -->
+            <div class="col-12 col-xl-6">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-header bg-transparent border-0 pt-4 pb-0">
+                        <h5 class="mb-0">Quick Access</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="row g-3">
+                            <div class="col-6 col-sm-4">
+                                <a href="/sams backup/SAMS/public/students/list.php" class="quick-link-card card border-0 text-center p-3">
+                                    <i class="fas fa-user-graduate fa-2x text-primary mb-2"></i>
+                                    <h6 class="mb-0 text-primary">Students</h6>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-4">
+                                <a href="/sams backup/SAMS/public/attendance/list.php" class="quick-link-card card border-0 text-center p-3">
+                                    <i class="fas fa-clipboard-check fa-2x text-success mb-2"></i>
+                                    <h6 class="mb-0 text-success">Attendance</h6>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-4">
+                                <a href="/sams backup/SAMS/public/exams/list.php" class="quick-link-card card border-0 text-center p-3">
+                                    <i class="fas fa-file-alt fa-2x text-info mb-2"></i>
+                                    <h6 class="mb-0 text-info">Exams</h6>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-4">
+                                <a href="/sams backup/SAMS/public/grades/list.php" class="quick-link-card card border-0 text-center p-3">
+                                    <i class="fas fa-award fa-2x text-warning mb-2"></i>
+                                    <h6 class="mb-0 text-warning">Grades</h6>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-4">
+                                <a href="/sams backup/SAMS/public/fees/list.php" class="quick-link-card card border-0 text-center p-3">
+                                    <i class="fas fa-money-bill-wave fa-2x text-danger mb-2"></i>
+                                    <h6 class="mb-0 text-danger">Fees</h6>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-4">
+                                <a href="/sams backup/SAMS/public/notifications/list.php" class="quick-link-card card border-0 text-center p-3">
+                                    <i class="fas fa-bell fa-2x text-secondary mb-2"></i>
+                                    <h6 class="mb-0 text-secondary">Notifications</h6>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Recent Activities -->
+            <div class="col-12 col-xl-6">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-header bg-transparent border-0 pt-4 d-flex justify-content-between align-items-center">
+                        <h5 class="mb-0">Recent Notifications</h5>
+                        <a href="<?php echo BASE_URL; ?>public/notifications/list.php" class="btn btn-sm btn-outline-primary">View All</a>
+                    </div>
+                    <div class="card-body">
+                        <?php if ($user_role === 'student'): ?>
+                            <?php if (empty($notifications)): ?>
+                                <p class="text-muted">No notifications available.</p>
+                            <?php else: ?>
+                                <div class="notifications-list">
+                                    <?php 
+                                    // Show only the latest 3 notifications
+                                    $recentNotifications = array_slice($notifications, 0, 3);
+                                    foreach ($recentNotifications as $notification): 
+                                    ?>
+                                        <div class="notification-item mb-3 p-3 bg-light rounded">
+                                            <h6 class="mb-1"><?php echo htmlspecialchars($notification['title']); ?></h6>
+                                            <p class="mb-1 text-muted"><?php echo htmlspecialchars($notification['message']); ?></p>
+                                            <small class="text-muted"><?php echo date('F j, Y g:i A', strtotime($notification['created_at'])); ?></small>
+                                        </div>
+                                    <?php endforeach; ?>
+                                    <?php if (count($notifications) > 3): ?>
+                                        <div class="text-center mt-3">
+                                            <a href="<?php echo BASE_URL; ?>public/notifications/list.php" class="btn btn-link text-primary">View All Notifications</a>
+                                        </div>
+                                    <?php endif; ?>
+                                </div>
+                            <?php endif; ?>
+                        <?php else: ?>
+                            <?php
+                            // Fetch notifications for non-student users
+                            $notifications = get_user_notifications($pdo, $_SESSION['user_id'], $_SESSION['role_name'], 3);
+                            
+                            if (empty($notifications)): ?>
+                                <p class="text-muted">No notifications available.</p>
+                            <?php else: ?>
+                                <div class="notifications-list">
+                                    <?php foreach ($notifications as $notification): ?>
+                                        <div class="notification-item mb-3 p-3 bg-light rounded">
+                                            <h6 class="mb-1"><?php echo htmlspecialchars($notification['title']); ?></h6>
+                                            <p class="mb-1 text-muted"><?php echo htmlspecialchars($notification['message']); ?></p>
+                                            <small class="text-muted">
+                                                <?php 
+                                                $timestamp = strtotime($notification['created_at']);
+                                                $now = time();
+                                                $diff = $now - $timestamp;
+                                                
+                                                if ($diff < 60) {
+                                                    echo "Just now";
+                                                } elseif ($diff < 3600) {
+                                                    $mins = floor($diff / 60);
+                                                    echo $mins . " minute" . ($mins > 1 ? "s" : "") . " ago";
+                                                } elseif ($diff < 86400) {
+                                                    $hours = floor($diff / 3600);
+                                                    echo $hours . " hour" . ($hours > 1 ? "s" : "") . " ago";
+                                                } else {
+                                                    echo date('M j, Y g:i A', $timestamp);
+                                                }
+                                                ?>
+                                            </small>
+                                        </div>
+                                    <?php endforeach; ?>
+                                    <?php if (count($notifications) > 0): ?>
+                                        <div class="text-center mt-3">
+                                            <a href="<?php echo BASE_URL; ?>public/notifications/list.php" class="btn btn-link text-primary">View All Notifications</a>
+                                        </div>
+                                    <?php endif; ?>
+                                </div>
+                            <?php endif; ?>
+                        <?php endif; ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /#page-content-wrapper -->
+
+<?php require_once 'includes/footer.php'; // Include the footer ?>
+</div> <!-- Close .container-fluid -->
+</div> <!-- Close #page-content-wrapper -->
+<?php endif; ?> <!-- Close the main student/regular dashboard condition -->
+

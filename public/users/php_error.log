@@ -1,0 +1,75 @@
+[17-Aug-2025 14:57:30 Europe/Berlin] Starting add.php script
+[17-Aug-2025 14:57:51 Europe/Berlin] Starting add.php script
+[17-Aug-2025 14:57:51 Europe/Berlin] CSRF token verified successfully
+[17-Aug-2025 14:57:51 Europe/Berlin] Message set: error - Password must be at least 6 characters long.
+[17-Aug-2025 14:57:51 Europe/Berlin] Starting add.php script
+[17-Aug-2025 14:58:17 Europe/Berlin] Starting add.php script
+[17-Aug-2025 15:08:04 Europe/Berlin] Starting add.php script
+[17-Aug-2025 15:08:28 Europe/Berlin] Starting add.php script
+[17-Aug-2025 15:08:28 Europe/Berlin] CSRF token verified successfully
+[17-Aug-2025 15:08:28 Europe/Berlin] Message set: error - Password must be at least 6 characters long.
+[17-Aug-2025 15:08:28 Europe/Berlin] Starting add.php script
+[17-Aug-2025 15:10:09 Europe/Berlin] Starting add.php script
+[17-Aug-2025 15:10:24 Europe/Berlin] Starting add.php script
+[17-Aug-2025 15:10:24 Europe/Berlin] CSRF token verified successfully
+[17-Aug-2025 15:10:24 Europe/Berlin] Message set: error - Password must be at least 6 characters long.
+[17-Aug-2025 15:10:24 Europe/Berlin] Starting add.php script
+[17-Aug-2025 15:59:55 Europe/Berlin] Starting add.php script
+[17-Aug-2025 16:00:20 Europe/Berlin] Starting add.php script
+[17-Aug-2025 16:00:20 Europe/Berlin] CSRF token verified successfully
+[17-Aug-2025 16:00:20 Europe/Berlin] Message set: success - User "admin1" was created successfully.
+[17-Aug-2025 17:54:09 Europe/Berlin] Starting add.php script
+[19-Aug-2025 07:02:53 Europe/Berlin] Starting add.php script
+[19-Aug-2025 08:33:27 Europe/Berlin] Starting add.php script
+[19-Aug-2025 08:41:20 Europe/Berlin] Starting add.php script
+[19-Aug-2025 08:51:36 Europe/Berlin] Starting add.php script
+[19-Aug-2025 08:53:21 Europe/Berlin] Starting add.php script
+[19-Aug-2025 08:53:21 Europe/Berlin] CSRF token verified successfully
+[19-Aug-2025 08:53:21 Europe/Berlin] Message set: success - User "Rosi Teacher" was created successfully.
+[19-Aug-2025 08:57:33 Europe/Berlin] Starting add.php script
+[19-Aug-2025 08:58:17 Europe/Berlin] Starting add.php script
+[19-Aug-2025 08:58:17 Europe/Berlin] CSRF token verified successfully
+[19-Aug-2025 08:58:18 Europe/Berlin] Message set: success - User "teacher" was created successfully.
+[19-Aug-2025 10:49:01 Europe/Berlin] Starting add.php script
+[20-Aug-2025 07:38:01 Europe/Berlin] Starting add.php script
+[20-Aug-2025 07:39:00 Europe/Berlin] Starting add.php script
+[20-Aug-2025 07:39:00 Europe/Berlin] CSRF token verified successfully
+[20-Aug-2025 07:39:00 Europe/Berlin] Message set: success - User "Madhu Teacher" was created successfully.
+[21-Aug-2025 07:59:44 Europe/Berlin] Starting add.php script
+[21-Aug-2025 08:01:07 Europe/Berlin] Starting add.php script
+[21-Aug-2025 08:02:06 Europe/Berlin] Starting add.php script
+[21-Aug-2025 08:02:06 Europe/Berlin] CSRF token verified successfully
+[21-Aug-2025 08:02:06 Europe/Berlin] Message set: success - User "maheshika" was created successfully.
+[21-Aug-2025 08:06:32 Europe/Berlin] Starting add.php script
+[21-Aug-2025 08:06:54 Europe/Berlin] Starting add.php script
+[21-Aug-2025 08:06:54 Europe/Berlin] CSRF token verified successfully
+[21-Aug-2025 08:06:54 Europe/Berlin] Message set: success - User "chamindu" was created successfully.
+[21-Aug-2025 08:13:06 Europe/Berlin] Starting add.php script
+[21-Aug-2025 08:13:24 Europe/Berlin] Starting add.php script
+[21-Aug-2025 08:13:24 Europe/Berlin] CSRF token verified successfully
+[21-Aug-2025 08:13:24 Europe/Berlin] Message set: success - User "cha" was created successfully.
+[21-Aug-2025 08:16:16 Europe/Berlin] Starting add.php script
+[21-Aug-2025 08:16:31 Europe/Berlin] Starting add.php script
+[21-Aug-2025 08:16:31 Europe/Berlin] CSRF token verified successfully
+[21-Aug-2025 08:16:31 Europe/Berlin] Message set: success - User "dfv" was created successfully.
+[21-Aug-2025 08:18:04 Europe/Berlin] Starting add.php script
+[21-Aug-2025 08:18:31 Europe/Berlin] Starting add.php script
+[21-Aug-2025 08:18:53 Europe/Berlin] Starting add.php script
+[21-Aug-2025 08:18:53 Europe/Berlin] CSRF token verified successfully
+[21-Aug-2025 08:18:53 Europe/Berlin] Message set: success - User "maheshika" was created successfully.
+[21-Aug-2025 11:04:05 Europe/Berlin] Starting add.php script
+[21-Aug-2025 11:04:34 Europe/Berlin] Starting add.php script
+[21-Aug-2025 11:04:34 Europe/Berlin] CSRF token verified successfully
+[21-Aug-2025 11:04:34 Europe/Berlin] Message set: success - User "maheshika" was created successfully.
+[22-Aug-2025 03:30:13 Europe/Berlin] Starting add.php script
+[22-Aug-2025 03:31:13 Europe/Berlin] Starting add.php script
+[22-Aug-2025 03:31:13 Europe/Berlin] CSRF token verified successfully
+[22-Aug-2025 03:31:13 Europe/Berlin] Message set: success - User "john" was created successfully.
+[22-Aug-2025 03:38:51 Europe/Berlin] Starting add.php script
+[22-Aug-2025 03:39:26 Europe/Berlin] Starting add.php script
+[22-Aug-2025 03:39:26 Europe/Berlin] CSRF token verified successfully
+[22-Aug-2025 03:39:26 Europe/Berlin] Message set: success - User "john" was created successfully.
+[22-Aug-2025 03:46:35 Europe/Berlin] Starting add.php script
+[22-Aug-2025 03:47:05 Europe/Berlin] Starting add.php script
+[22-Aug-2025 03:47:05 Europe/Berlin] CSRF token verified successfully
+[22-Aug-2025 03:47:05 Europe/Berlin] Message set: success - User "manager" was created successfully.

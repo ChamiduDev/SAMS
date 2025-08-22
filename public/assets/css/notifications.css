@@ -1,0 +1,52 @@
+/* Notification icon styles */
+.nav-item .notification-icon {
+    font-size: 1.2rem;
+    color: #6c757d;
+    transition: color 0.2s ease;
+}
+
+.nav-item .notification-icon:hover {
+    color: #0d6efd;
+}
+
+.notifications-count {
+    font-size: 0.65rem !important;
+    padding: 0.25rem 0.4rem;
+    min-width: 1rem;
+    height: 1rem;
+    line-height: 0.5rem;
+}
+
+/* Notification list styles */
+.notifications-list .notification-item {
+    transition: background-color 0.2s ease;
+    border-left: 4px solid transparent;
+}
+
+.notifications-list .notification-item:hover {
+    background-color: rgba(13, 110, 253, 0.05) !important;
+    border-left-color: #0d6efd;
+}
+
+.notifications-list .notification-item.unread {
+    background-color: rgba(13, 110, 253, 0.05) !important;
+    border-left-color: #0d6efd;
+}
+
+.notifications-list .notification-time {
+    font-size: 0.75rem;
+    color: #6c757d;
+}
+
+/* View all link */
+.view-all-link {
+    color: #0d6efd;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.view-all-link:hover {
+    color: #0a58ca;
+    text-decoration: underline;
+}

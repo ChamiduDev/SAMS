@@ -1,0 +1,155 @@
+/* Sidebar Styles */
+.offcanvas#sidebar {
+    width: 280px;
+    background: linear-gradient(135deg, var(--professional-blue) 0%, var(--dark-blue) 100%);
+    border: none;
+    box-shadow: 3px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Sidebar Header */
+#sidebar .offcanvas-header {
+    background: rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+}
+
+#sidebar .offcanvas-title {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+/* Sidebar Body */
+#sidebar .offcanvas-body {
+    padding: 1rem 0;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, transparent 100%);
+}
+
+/* Navigation Links */
+#sidebar .nav-link {
+    color: rgba(255, 255, 255, 0.8);
+    padding: 0.875rem 1.5rem;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+    border-left: 3px solid transparent;
+    margin: 2px 0;
+    font-weight: 500;
+}
+
+#sidebar .nav-link i {
+    width: 24px;
+    font-size: 1.1rem;
+    margin-right: 12px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+#sidebar .nav-link span {
+    font-size: 0.95rem;
+}
+
+/* Active and Hover States */
+#sidebar .nav-link:hover,
+#sidebar .nav-link.active {
+    color: white;
+    background: rgba(255, 255, 255, 0.1);
+    border-left-color: var(--light-green);
+    padding-left: 1.75rem;
+}
+
+#sidebar .nav-link:hover i,
+#sidebar .nav-link.active i {
+    color: var(--light-green);
+    transform: translateX(3px);
+}
+
+/* Divider */
+#sidebar .sidebar-divider {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 1rem 1.5rem;
+    opacity: 0.3;
+}
+
+/* Close Button */
+#sidebar .btn-close {
+    filter: invert(1) grayscale(100%) brightness(200%);
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+#sidebar .btn-close:hover {
+    opacity: 1;
+    transform: rotate(90deg);
+}
+
+/* Logout Link */
+#sidebar .nav-link[href*="logout"] {
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 1rem;
+}
+
+#sidebar .nav-link[href*="logout"]:hover {
+    color: #ff4444;
+    background: rgba(255, 99, 99, 0.1);
+    border-left-color: #ff4444;
+}
+
+/* Responsive Behavior */
+@media (max-width: 991.98px) {
+    .offcanvas#sidebar {
+        transform: translateX(-100%);
+    }
+    
+    .offcanvas#sidebar.show {
+        transform: translateX(0);
+    }
+}
+
+/* Smooth Scrollbar */
+#sidebar .offcanvas-body {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
+}
+
+#sidebar .offcanvas-body::-webkit-scrollbar {
+    width: 4px;
+}
+
+#sidebar .offcanvas-body::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+#sidebar .offcanvas-body::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+}
+
+/* Menu Categories */
+.menu-category {
+    color: var(--light-green);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 1.5rem 1.5rem 0.5rem;
+    opacity: 0.8;
+}
+
+/* Navigation Groups */
+.nav-group {
+    margin-bottom: 1rem;
+}
+
+/* Icon Animations */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+#sidebar .nav-link.active i {
+    animation: pulse 2s infinite;
+}

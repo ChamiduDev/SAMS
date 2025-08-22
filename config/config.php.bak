@@ -1,0 +1,65 @@
+<?p// Database cre// Load all configuration files
+require_once __DIR__ . '/database.php';
+require_once __DIR__ . '/school_settings.php';
+
+// Base URL for the application
+define('BASE_URL', 'http://localhost/sams backup/SAMS/');
+
+// Error reporting for development
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);HOST', 'localhost');
+define('DB_NAME', 'sams_db');
+define('DB_USER', 'root');
+define('DB_PASS', '');
+define('DB_CHARSET', 'utf8mb4');
+
+// Base URL for the application
+define('BASE_URL', 'http://localhost/sams backup/SAMS/');
+
+// School Information
+define('SCHOOL_NAME', 'Student Academic Management System');
+define('SCHOOL_ADDRESS', '123 Education Street, Academic City');
+define('SCHOOL_EMAIL', 'info@sams.edu');
+define('SCHOOL_PHONE', '+1 234 567 8900');
+
+// Other configurations (uncomment if needed)
+// define('DEFAULT_ROLE', 'student');
+// define('ITEMS_PER_PAGE', 10');config.php (CLEANED)
+
+// Database credentials
+define('DB_HOST', 'localhost');
+define('DB_NAME', 'sams_db');
+define('DB_USER', 'root');
+define('DB_PASS', '');
+define('DB_CHARSET', 'utf8mb4');
+
+// Base URL for the application
+define('BASE_URL', 'http://localhost/sams backup/SAMS/');
+
+// Other configurations (uncomment if needed)
+// define('DEFAULT_ROLE', 'student');
+// define('ITEMS_PER_PAGE', 10);
+
+// Error reporting for development
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+// Create PDO connection
+try {
+    $dsn = "mysql:host=" . DB_HOST . ";dbname=" . DB_NAME . ";charset=" . DB_CHARSET;
+    $pdo = new PDO($dsn, DB_USER, DB_PASS);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
+} catch(PDOException $e) {
+    error_log("Database Connection Error: " . $e->getMessage());
+    die("Connection failed: " . $e->getMessage());
+}
+
+// Start session if not already started
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
+
+?>
