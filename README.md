@@ -33,7 +33,7 @@ The application uses a MySQL database with the following main tables:
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/your-username/sams.git
+    git clone https://github.com/ChamiduDev/SAMS.git
     ```
 2.  **Import the database:**
     *   Create a new MySQL database named `sams_db`.
